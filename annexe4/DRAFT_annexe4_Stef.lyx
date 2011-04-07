@@ -1,0 +1,1771 @@
+#LyX 1.6.8 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\language french
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family sfdefault
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement h
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\leftmargin 2cm
+\topmargin 2.5cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box ovalbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Title
+Titre
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\series bold
+Auteurs:
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+NOMS
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features>
+<column alignment="center" valignment="top" width="5cm">
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="left" valignment="top" width="4cm">
+<column alignment="left" valignment="top" width="3cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Référence
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Version
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Version du document
+\end_layout
+
+\end_inset
+
+ 1.0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Avancement
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+☐ Validé
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dernière mise à jour
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+☐ Validé après modif.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+☐ Revalidé
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="4">
+<features>
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="center" valignment="top" width="4cm">
+<row>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none" width="4cm">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Visa
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Date
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Responsable
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Nom du responsable
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lyxline
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lyxline
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Historique du document
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="4">
+<features>
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="7cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Date
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Auteur
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Version
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Sujet de la modification
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Annexe 4: Organisation de Nagios
+\end_layout
+
+\begin_layout Standard
+Parmi les logiciels libre de supervision, Nagios est le plus répendu et
+ également le plus suivi par la communauté de développeur.Nagios (anciennement
+ appelé Netsaint) est une application permettant la surveillance système
+ et réseau.
+ Elle surveille les hôtes et services spécifiés, alertant lorsque les systèmes
+ vont mal et quand ils vont mieux.
+\end_layout
+
+\begin_layout Subsection
+Ajouter un host Windows
+\end_layout
+
+\begin_layout Standard
+Nous allons ajouter la machine if213-06 , IP 134.214.105.165.
+ On va modifier les fichies de configuration: en premier le fichier NSC.ini
+ de NSClient++ et après Nagios.cfg et Windows.cfg sur le serveur Nagios (
+ à travers une connexion SSH).
+ En fait on va créer un fichier de configuration (Exemple.cfg) pour chaque
+ host qu'on ajoute et va ajouter ce fichier dans Nagios.cfg ( cfg_file=/usr/local
+/nagios/etc/objects/Exemple.cfg)
+\end_layout
+
+\begin_layout Subsubsection
+NSC.INI
+\end_layout
+
+\begin_layout Standard
+[modules]
+\end_layout
+
+\begin_layout Standard
+FileLogger.dll
+\end_layout
+
+\begin_layout Standard
+CheckSystem.dll
+\end_layout
+
+\begin_layout Standard
+CheckDisk.dll
+\end_layout
+
+\begin_layout Standard
+NSClientListener.dll
+\end_layout
+
+\begin_layout Standard
+NRPEListener.dll
+\end_layout
+
+\begin_layout Standard
+SysTray.dll
+\end_layout
+
+\begin_layout Standard
+CheckEventLog.dll
+\end_layout
+
+\begin_layout Standard
+CheckHelpers.dll
+\end_layout
+
+\begin_layout Standard
+;
+\end_layout
+
+\begin_layout Standard
+; CheckWMI IS AN EXTREM EARLY IDEA SO DONT USE FOR PRODUCTION ENVIROMNEMTS!
+\end_layout
+
+\begin_layout Standard
+;CheckWMI.dll
+\end_layout
+
+\begin_layout Standard
+[Settings]
+\end_layout
+
+\begin_layout Standard
+;# OBFUSCATED PASSWORD
+\end_layout
+
+\begin_layout Standard
+; This is the same as the password option but here you can store the password
+ in an obfuscated manner.
+\end_layout
+
+\begin_layout Standard
+; *NOTICE* obfuscation is *NOT* the same as encryption, someone with access
+ to this file can still figure out the 
+\end_layout
+
+\begin_layout Standard
+; password.
+ Its just a bit harder to do it at first glance.
+\end_layout
+
+\begin_layout Standard
+;obfuscated_password=Jw0KAUUdXlAAUwASDAAB
+\end_layout
+
+\begin_layout Standard
+;
+\end_layout
+
+\begin_layout Standard
+;# PASSWORD
+\end_layout
+
+\begin_layout Standard
+; This is the password (-s) that is required to access NSClient remotely.
+ If you leave this blank everyone will be able to access the daemon remotly.
+\end_layout
+
+\begin_layout Standard
+password=passe
+\end_layout
+
+\begin_layout Standard
+;
+\end_layout
+
+\begin_layout Standard
+;# ALLOWED HOST ADDRESSES
+\end_layout
+
+\begin_layout Standard
+; This is a comma-delimited list of IP address of hosts that are allowed
+ to talk to the all daemons.
+\end_layout
+
+\begin_layout Standard
+; If leave this blank anyone can access the deamon remotly (NSClient still
+ requires a valid password).
+\end_layout
+
+\begin_layout Standard
+allowed_hosts=134.214.105.165,134.214.105.156
+\end_layout
+
+\begin_layout Standard
+[log]
+\end_layout
+
+\begin_layout Standard
+;# LOG DEBUG
+\end_layout
+
+\begin_layout Standard
+; Set to 1 if you want debug message printed in the log file (debug messages
+ are always printed to stdout when run with -test)
+\end_layout
+
+\begin_layout Standard
+;debug=1
+\end_layout
+
+\begin_layout Standard
+;
+\end_layout
+
+\begin_layout Standard
+;# LOG FILE
+\end_layout
+
+\begin_layout Standard
+; The file to print log statements to
+\end_layout
+
+\begin_layout Standard
+;file=NSC.log
+\end_layout
+
+\begin_layout Standard
+;
+\end_layout
+
+\begin_layout Standard
+;# LOG DATE MASK
+\end_layout
+
+\begin_layout Standard
+; The format to for the date/time part of the log entry written to file.
+\end_layout
+
+\begin_layout Standard
+;date_mask=%Y-%m-%d %H:%M:%S
+\end_layout
+
+\begin_layout Standard
+[NSClient]
+\end_layout
+
+\begin_layout Standard
+;# NSCLIENT PORT NUMBER
+\end_layout
+
+\begin_layout Standard
+; This is the port the NSClientListener.dll will listen to.
+\end_layout
+
+\begin_layout Standard
+port=12489
+\end_layout
+
+\begin_layout Standard
+[Check System]
+\end_layout
+
+\begin_layout Standard
+;# CPU BUFFER SIZE
+\end_layout
+
+\begin_layout Standard
+; Can be anything ranging from 1s (for 1 second) to 10w for 10 weeks.
+ Notice that a larger buffer will waste memory 
+\end_layout
+
+\begin_layout Standard
+; so don't use a larger buffer then you need (ie.
+ the longest check you do +1).
+\end_layout
+
+\begin_layout Standard
+;CPUBufferSize=1h
+\end_layout
+
+\begin_layout Standard
+;
+\end_layout
+
+\begin_layout Standard
+;# CHECK RESOLUTION
+\end_layout
+
+\begin_layout Standard
+; The resolution to check values (currently only CPU).
+\end_layout
+
+\begin_layout Standard
+; The value is entered in 1/10:th of a second and the default is 10 (which
+ means ones every second)
+\end_layout
+
+\begin_layout Standard
+;CheckResolution=10
+\end_layout
+
+\begin_layout Standard
+[NRPE]
+\end_layout
+
+\begin_layout Standard
+;# NRPE PORT NUMBER
+\end_layout
+
+\begin_layout Standard
+; This is the port the NRPEListener.dll will listen to.
+\end_layout
+
+\begin_layout Standard
+;port=5666
+\end_layout
+
+\begin_layout Standard
+;
+\end_layout
+
+\begin_layout Standard
+;# COMMAND TIMEOUT
+\end_layout
+
+\begin_layout Standard
+; This specifies the maximum number of seconds that the NRPE daemon will
+ allow plug-ins to finish executing before killing them off.
+\end_layout
+
+\begin_layout Standard
+;command_timeout=60
+\end_layout
+
+\begin_layout Standard
+;
+\end_layout
+
+\begin_layout Standard
+;# COMMAND ARGUMENT PROCESSING
+\end_layout
+
+\begin_layout Standard
+; This option determines whether or not the NRPE daemon will allow clients
+ to specify arguments to commands that are executed.
+\end_layout
+
+\begin_layout Standard
+;allow_arguments=0
+\end_layout
+
+\begin_layout Standard
+;
+\end_layout
+
+\begin_layout Standard
+;# COMMAND ALLOW NASTY META CHARS
+\end_layout
+
+\begin_layout Standard
+; This option determines whether or not the NRPE daemon will allow clients
+ to specify nasty (as in |`&><'"
+\backslash
+[]{}) characters in arguments.
+\end_layout
+
+\begin_layout Standard
+;allow_nasty_meta_chars=0
+\end_layout
+
+\begin_layout Standard
+;
+\end_layout
+
+\begin_layout Standard
+;# USE SSL SOCKET
+\end_layout
+
+\begin_layout Standard
+; This option controls if SSL should be used on the socket.
+\end_layout
+
+\begin_layout Standard
+;use_ssl=1
+\end_layout
+
+\begin_layout Standard
+[NRPE Handlers]
+\end_layout
+
+\begin_layout Standard
+;# COMMAND DEFINITIONS
+\end_layout
+
+\begin_layout Standard
+;# Command definitions that this daemon will run.
+\end_layout
+
+\begin_layout Standard
+;# Can be either NRPE syntax:
+\end_layout
+
+\begin_layout Standard
+;command[check_users]=/usr/local/nagios/libexec/check_users -w 5 -c 10
+\end_layout
+
+\begin_layout Standard
+;# Or simplified syntax:
+\end_layout
+
+\begin_layout Standard
+;test=c:
+\backslash
+test.bat foo $ARG1$ bar
+\end_layout
+
+\begin_layout Standard
+;check_disk1=/usr/local/nagios/libexec/check_disk -w 5 -c 10
+\end_layout
+
+\begin_layout Standard
+;# Or even loopback (inject) syntax (to run internal commands)
+\end_layout
+
+\begin_layout Standard
+;# This is a way to run "NSClient" commands and other internal module commands
+ such as check eventlog etc.
+\end_layout
+
+\begin_layout Standard
+;check_cpu=inject checkCPU warn=80 crit=90 5 10 15
+\end_layout
+
+\begin_layout Standard
+;check_eventlog=inject CheckEventLog Application warn.require.eventType=error
+ warn.require.eventType=warning critical.require.eventType=error critical.exclude.even
+tType=info truncate=1024 descriptions
+\end_layout
+
+\begin_layout Standard
+;check_disk_c=inject CheckFileSize ShowAll MaxWarn=1024M MaxCrit=4096M File:WIN=
+c:
+\backslash
+ATI
+\backslash
+*.*
+\end_layout
+
+\begin_layout Standard
+;# But be careful:
+\end_layout
+
+\begin_layout Standard
+; dont_check=inject dont_check This will "loop forever" so be careful with
+ the inject command...
+\end_layout
+
+\begin_layout Standard
+;# Check some escapings...
+\end_layout
+
+\begin_layout Standard
+; check_escape=inject CheckFileSize ShowAll MaxWarn=1024M MaxCrit=4096M
+ "File: foo 
+\backslash
+" WIN=c:
+\backslash
+
+\backslash
+WINDOWS
+\backslash
+
+\backslash
+*.*"
+\end_layout
+
+\begin_layout Subsubsection
+NAGIOS.CFG
+\end_layout
+
+\begin_layout Standard
+# Definitions for monitoring the local (Linux) host
+\end_layout
+
+\begin_layout Standard
+cfg_file=/usr/local/nagios/etc/objects/localhost.cfg
+\end_layout
+
+\begin_layout Standard
+# Definitions for monitoring a Windows machine
+\end_layout
+
+\begin_layout Standard
+cfg_file=/usr/local/nagios/etc/objects/windows.cfg
+\end_layout
+
+\begin_layout Subsubsection
+WINDOWS.CFG
+\end_layout
+
+\begin_layout Standard
+###############################################################################
+\end_layout
+
+\begin_layout Standard
+###############################################################################
+\end_layout
+
+\begin_layout Standard
+#
+\end_layout
+
+\begin_layout Standard
+# HOST DEFINITIONS
+\end_layout
+
+\begin_layout Standard
+#
+\end_layout
+
+\begin_layout Standard
+###############################################################################
+\end_layout
+
+\begin_layout Standard
+###############################################################################
+\end_layout
+
+\begin_layout Standard
+# Define a host for the Windows machine we'll be monitoring
+\end_layout
+
+\begin_layout Standard
+# Change the host_name, alias, and address to fit your situation
+\end_layout
+
+\begin_layout Standard
+define host{
+\end_layout
+
+\begin_layout Standard
+use windows-server ; Inherit default values from a template
+\end_layout
+
+\begin_layout Standard
+host_name if213-06 ; The name we're giving to this host
+\end_layout
+
+\begin_layout Standard
+alias Machine-test ; longer name associated with the host
+\end_layout
+
+\begin_layout Standard
+address 134.214.105.165 ; IP address of the host
+\end_layout
+
+\begin_layout Standard
+}
+\end_layout
+
+\begin_layout Standard
+###############################################################################
+\end_layout
+
+\begin_layout Standard
+###############################################################################
+\end_layout
+
+\begin_layout Standard
+#
+\end_layout
+
+\begin_layout Standard
+# HOST GROUP DEFINITIONS
+\end_layout
+
+\begin_layout Standard
+#
+\end_layout
+
+\begin_layout Standard
+###############################################################################
+\end_layout
+
+\begin_layout Standard
+###############################################################################
+\end_layout
+
+\begin_layout Standard
+# Define a hostgroup for Windows machines
+\end_layout
+
+\begin_layout Standard
+# All hosts that use the windows-server template will automatically be a
+ member of this group
+\end_layout
+
+\begin_layout Standard
+define hostgroup{
+\end_layout
+
+\begin_layout Standard
+hostgroup_name windows-servers ; The name of the hostgroup
+\end_layout
+
+\begin_layout Standard
+alias Windows Servers ; Long name of the group
+\end_layout
+
+\begin_layout Standard
+}
+\end_layout
+
+\begin_layout Standard
+###############################################################################
+\end_layout
+
+\begin_layout Standard
+###############################################################################
+\end_layout
+
+\begin_layout Standard
+#
+\end_layout
+
+\begin_layout Standard
+# SERVICE DEFINITIONS
+\end_layout
+
+\begin_layout Standard
+#
+\end_layout
+
+\begin_layout Standard
+###############################################################################
+\end_layout
+
+\begin_layout Standard
+###############################################################################
+\end_layout
+
+\begin_layout Standard
+# Create a service for monitoring the version of NSCLient++ that is installed
+\end_layout
+
+\begin_layout Standard
+# Change the host_name to match the name of the host you defined above
+\end_layout
+
+\begin_layout Standard
+define service{
+\end_layout
+
+\begin_layout Standard
+use generic-service
+\end_layout
+
+\begin_layout Standard
+host_name if213-06
+\end_layout
+
+\begin_layout Standard
+service_description NSClient++ Version
+\end_layout
+
+\begin_layout Standard
+check_command check_nt!CLIENTVERSION
+\end_layout
+
+\begin_layout Standard
+}
+\end_layout
+
+\begin_layout Standard
+# Create a service for monitoring the uptime of the server
+\end_layout
+
+\begin_layout Standard
+# Change the host_name to match the name of the host you defined above
+\end_layout
+
+\begin_layout Standard
+define service{
+\end_layout
+
+\begin_layout Standard
+use generic-service
+\end_layout
+
+\begin_layout Standard
+host_name if213-06
+\end_layout
+
+\begin_layout Standard
+service_description Uptime
+\end_layout
+
+\begin_layout Standard
+check_command check_nt!UPTIME
+\end_layout
+
+\begin_layout Standard
+}
+\end_layout
+
+\begin_layout Standard
+# Create a service for monitoring CPU load
+\end_layout
+
+\begin_layout Standard
+# Change the host_name to match the name of the host you defined above
+\end_layout
+
+\begin_layout Standard
+define service{
+\end_layout
+
+\begin_layout Standard
+use generic-service
+\end_layout
+
+\begin_layout Standard
+host_name if213-06
+\end_layout
+
+\begin_layout Standard
+service_description CPU Load
+\end_layout
+
+\begin_layout Standard
+check_command check_nt!CPULOAD!-l 5,80,90
+\end_layout
+
+\begin_layout Standard
+}
+\end_layout
+
+\begin_layout Standard
+# Create a service for monitoring memory usage
+\end_layout
+
+\begin_layout Standard
+# Change the host_name to match the name of the host you defined above
+\end_layout
+
+\begin_layout Standard
+define service{
+\end_layout
+
+\begin_layout Standard
+use generic-service
+\end_layout
+
+\begin_layout Standard
+host_name if213-06
+\end_layout
+
+\begin_layout Standard
+service_description Memory Usage
+\end_layout
+
+\begin_layout Standard
+check_command check_nt!MEMUSE!-w 80 -c 90
+\end_layout
+
+\begin_layout Standard
+}
+\end_layout
+
+\begin_layout Standard
+# Create a service for monitoring C:
+\backslash
+ disk usage
+\end_layout
+
+\begin_layout Standard
+# Change the host_name to match the name of the host you defined above
+\end_layout
+
+\begin_layout Standard
+define service{
+\end_layout
+
+\begin_layout Standard
+use generic-service
+\end_layout
+
+\begin_layout Standard
+host_name if213-06
+\end_layout
+
+\begin_layout Standard
+service_description C:
+\backslash
+ Drive Space
+\end_layout
+
+\begin_layout Standard
+check_command check_nt!USEDDISKSPACE!-l c -w 80 -c 90
+\end_layout
+
+\begin_layout Standard
+}
+\end_layout
+
+\begin_layout Standard
+# Create a service for monitoring the W3SVC service
+\end_layout
+
+\begin_layout Standard
+# Change the host_name to match the name of the host you defined above
+\end_layout
+
+\begin_layout Standard
+define service{
+\end_layout
+
+\begin_layout Standard
+use generic-service
+\end_layout
+
+\begin_layout Standard
+host_name if213-06
+\end_layout
+
+\begin_layout Standard
+service_description W3SVC
+\end_layout
+
+\begin_layout Standard
+check_command check_nt!SERVICESTATE!-d SHOWALL -l W3SVC
+\end_layout
+
+\begin_layout Standard
+}
+\end_layout
+
+\begin_layout Standard
+# Create a service for monitoring the Explorer.exe process
+\end_layout
+
+\begin_layout Standard
+# Change the host_name to match the name of the host you defined above
+\end_layout
+
+\begin_layout Standard
+define service{
+\end_layout
+
+\begin_layout Standard
+use generic-service
+\end_layout
+
+\begin_layout Standard
+host_name if213-06
+\end_layout
+
+\begin_layout Standard
+service_description Explorer
+\end_layout
+
+\begin_layout Standard
+check_command check_nt!PROCSTATE!-d SHOWALL -l Explorer.exe
+\end_layout
+
+\begin_layout Standard
+}
+\end_layout
+
+\begin_layout Subsubsection
+mrtg - a faire
+\end_layout
+
+\begin_layout Subsection
+Resultat
+\end_layout
+
+\begin_layout Standard
+On va commencer par monter la machine que nous avons ajouté : if213-06.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Documents and Settings/Stef/Bureau/eu reseaux/hosts.jpg
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Localhost est la machine propre à Nagios.
+\end_layout
+
+\begin_layout Standard
+La carte gerée pas Nagios: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Documents and Settings/Stef/Bureau/eu reseaux/carte.jpg
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On peut aussi voir les details d'etat de chaque host et faire des check
+ manuellement: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Documents and Settings/Stef/Bureau/eu reseaux/PRINT1.jpg
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On va essayer eteindre la machine if213-06, faire un check manuellement
+ et regarder a partir d'une autre machine son status:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Documents and Settings/Stef/Bureau/eu reseaux/print2.jpg
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On peut voir que tous les services sont passé à critucal d'ou on a bien
+ detecté que la machine à etait eteinte.
+ 
+\end_layout
+
+\begin_layout Standard
+En suite on va regarder les problemes, les raports et les alerts.
+ 
+\end_layout
+
+\begin_layout Standard
+Pour voir les problemes au moment actuel on peut cliquer sur Problems.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Documents and Settings/Stef/Bureau/eu reseaux/problems.jpg
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pat contre, si on veut avoir de statistiques au consulter l'historique,
+ on peut le faire dans la partie Reports.
+ On va créer un raport pour la derniere semaine et regarder l'activité de
+ tous les hosts:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Documents and Settings/Stef/Bureau/eu reseaux/report.jpg
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On peut aussi regrader l'activité plus en detail d'un seul host.
+ Pour example notre host, if213-06 pendant les dernieres 24h :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Documents and Settings/Stef/Bureau/eu reseaux/213 report 1 jour.jpg
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\end_body
+\end_document
