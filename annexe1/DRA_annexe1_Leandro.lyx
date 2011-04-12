@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.0.0rc2 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
 \begin_document
 \begin_header
 \textclass article
@@ -7,26 +7,17 @@
 \date{}
 \end_preamble
 \use_default_options true
-\maintain_unincluded_children false
 \language french
-\language_package default
 \inputencoding auto
-\fontencoding global
 \font_roman default
 \font_sans default
 \font_typewriter default
 \font_default_family sfdefault
-\use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
-\default_output_format default
-\output_sync 0
-\bibtex_command default
-\index_command default
 \float_placement h
 \paperfontsize 12
 \spacing single
@@ -44,18 +35,9 @@
 \use_geometry true
 \use_amsmath 1
 \use_esint 1
-\use_mhchem 1
-\use_mathdots 1
 \cite_engine basic
 \use_bibtopic false
-\use_indices false
 \paperorientation portrait
-\suppress_date false
-\use_refstyle 0
-\index Index
-\shortcut idx
-\color #008000
-\end_index
 \leftmargin 2cm
 \topmargin 2.5cm
 \rightmargin 2cm
@@ -70,9 +52,6 @@
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
-\html_math_output 0
-\html_css_as_file 0
-\html_be_strict false
 \end_header
 
 \begin_body
@@ -100,7 +79,6 @@ hor_pos "c"
 has_inner_box 1
 inner_pos "t"
 use_parbox 0
-use_makebox 0
 width "100col%"
 special "none"
 height "1in"
@@ -142,7 +120,7 @@ Leandro Resende Mattioli
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="4">
-<features tabularvalignment="middle">
+<features>
 <column alignment="center" valignment="top" width="5cm">
 <column alignment="center" valignment="top" width="4cm">
 <column alignment="left" valignment="top" width="4cm">
@@ -289,7 +267,7 @@ Dernière mise à jour
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="4">
-<features tabularvalignment="middle">
+<features>
 <column alignment="center" valignment="top" width="4cm">
 <column alignment="center" valignment="top" width="4cm">
 <column alignment="center" valignment="top" width="4cm">
@@ -418,12 +396,14 @@ thispagestyle{empty}
 
 \begin_layout Standard
 \noindent
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0.5ex"
-width "100line%"
-height "1pt"
+\begin_inset ERT
+status collapsed
+\begin_layout Plain Layout
 
+\backslash
+rule[[0.5ex]]{1.0\backslash
+linewidth}{1pt}
+\end_layout
 \end_inset
 
 
@@ -479,7 +459,7 @@ Historique du document
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="9" columns="4">
-<features tabularvalignment="middle">
+<features>
 <column alignment="center" valignment="top" width="3cm">
 <column alignment="center" valignment="top" width="3cm">
 <column alignment="center" valignment="top" width="3cm">
@@ -966,7 +946,6 @@ hor_pos "c"
 has_inner_box 1
 inner_pos "t"
 use_parbox 0
-use_makebox 0
 width "100col%"
 special "none"
 height "1in"
@@ -1388,7 +1367,6 @@ hor_pos "c"
 has_inner_box 1
 inner_pos "t"
 use_parbox 0
-use_makebox 0
 width "100col%"
 special "none"
 height "1in"
