@@ -829,11 +829,11 @@ Parmi les logiciels libre de supervision, Nagios est le plus répendu et
 \end_layout
 
 \begin_layout Subsection
-Ajouter un host Windows
+NAGIOS
 \end_layout
 
 \begin_layout Standard
-Nous allons ajouter la machine if213-06 , IP 134.214.105.165.
+Nous allons ajouter la machine windows if213-06 , IP 134.214.105.165.
  On va modifier les fichies de configuration: en premier le fichier NSC.ini
  de NSClient++ et après Nagios.cfg et Windows.cfg sur le serveur Nagios (
  à travers une connexion SSH).
@@ -883,11 +883,7 @@ CheckHelpers.dll
 \end_layout
 
 \begin_layout Standard
-;
-\end_layout
 
-\begin_layout Standard
-; CheckWMI IS AN EXTREM EARLY IDEA SO DONT USE FOR PRODUCTION ENVIROMNEMTS!
 \end_layout
 
 \begin_layout Standard
@@ -990,7 +986,7 @@ allowed_hosts=134.214.105.165,134.214.105.156
 \end_layout
 
 \begin_layout Standard
-;file=NSC.log
+file=NSC_H4312.log
 \end_layout
 
 \begin_layout Standard
@@ -1023,224 +1019,6 @@ allowed_hosts=134.214.105.165,134.214.105.156
 
 \begin_layout Standard
 port=12489
-\end_layout
-
-\begin_layout Standard
-[Check System]
-\end_layout
-
-\begin_layout Standard
-;# CPU BUFFER SIZE
-\end_layout
-
-\begin_layout Standard
-; Can be anything ranging from 1s (for 1 second) to 10w for 10 weeks.
- Notice that a larger buffer will waste memory 
-\end_layout
-
-\begin_layout Standard
-; so don't use a larger buffer then you need (ie.
- the longest check you do +1).
-\end_layout
-
-\begin_layout Standard
-;CPUBufferSize=1h
-\end_layout
-
-\begin_layout Standard
-;
-\end_layout
-
-\begin_layout Standard
-;# CHECK RESOLUTION
-\end_layout
-
-\begin_layout Standard
-; The resolution to check values (currently only CPU).
-\end_layout
-
-\begin_layout Standard
-; The value is entered in 1/10:th of a second and the default is 10 (which
- means ones every second)
-\end_layout
-
-\begin_layout Standard
-;CheckResolution=10
-\end_layout
-
-\begin_layout Standard
-[NRPE]
-\end_layout
-
-\begin_layout Standard
-;# NRPE PORT NUMBER
-\end_layout
-
-\begin_layout Standard
-; This is the port the NRPEListener.dll will listen to.
-\end_layout
-
-\begin_layout Standard
-;port=5666
-\end_layout
-
-\begin_layout Standard
-;
-\end_layout
-
-\begin_layout Standard
-;# COMMAND TIMEOUT
-\end_layout
-
-\begin_layout Standard
-; This specifies the maximum number of seconds that the NRPE daemon will
- allow plug-ins to finish executing before killing them off.
-\end_layout
-
-\begin_layout Standard
-;command_timeout=60
-\end_layout
-
-\begin_layout Standard
-;
-\end_layout
-
-\begin_layout Standard
-;# COMMAND ARGUMENT PROCESSING
-\end_layout
-
-\begin_layout Standard
-; This option determines whether or not the NRPE daemon will allow clients
- to specify arguments to commands that are executed.
-\end_layout
-
-\begin_layout Standard
-;allow_arguments=0
-\end_layout
-
-\begin_layout Standard
-;
-\end_layout
-
-\begin_layout Standard
-;# COMMAND ALLOW NASTY META CHARS
-\end_layout
-
-\begin_layout Standard
-; This option determines whether or not the NRPE daemon will allow clients
- to specify nasty (as in |`&><'"
-\backslash
-[]{}) characters in arguments.
-\end_layout
-
-\begin_layout Standard
-;allow_nasty_meta_chars=0
-\end_layout
-
-\begin_layout Standard
-;
-\end_layout
-
-\begin_layout Standard
-;# USE SSL SOCKET
-\end_layout
-
-\begin_layout Standard
-; This option controls if SSL should be used on the socket.
-\end_layout
-
-\begin_layout Standard
-;use_ssl=1
-\end_layout
-
-\begin_layout Standard
-[NRPE Handlers]
-\end_layout
-
-\begin_layout Standard
-;# COMMAND DEFINITIONS
-\end_layout
-
-\begin_layout Standard
-;# Command definitions that this daemon will run.
-\end_layout
-
-\begin_layout Standard
-;# Can be either NRPE syntax:
-\end_layout
-
-\begin_layout Standard
-;command[check_users]=/usr/local/nagios/libexec/check_users -w 5 -c 10
-\end_layout
-
-\begin_layout Standard
-;# Or simplified syntax:
-\end_layout
-
-\begin_layout Standard
-;test=c:
-\backslash
-test.bat foo $ARG1$ bar
-\end_layout
-
-\begin_layout Standard
-;check_disk1=/usr/local/nagios/libexec/check_disk -w 5 -c 10
-\end_layout
-
-\begin_layout Standard
-;# Or even loopback (inject) syntax (to run internal commands)
-\end_layout
-
-\begin_layout Standard
-;# This is a way to run "NSClient" commands and other internal module commands
- such as check eventlog etc.
-\end_layout
-
-\begin_layout Standard
-;check_cpu=inject checkCPU warn=80 crit=90 5 10 15
-\end_layout
-
-\begin_layout Standard
-;check_eventlog=inject CheckEventLog Application warn.require.eventType=error
- warn.require.eventType=warning critical.require.eventType=error critical.exclude.even
-tType=info truncate=1024 descriptions
-\end_layout
-
-\begin_layout Standard
-;check_disk_c=inject CheckFileSize ShowAll MaxWarn=1024M MaxCrit=4096M File:WIN=
-c:
-\backslash
-ATI
-\backslash
-*.*
-\end_layout
-
-\begin_layout Standard
-;# But be careful:
-\end_layout
-
-\begin_layout Standard
-; dont_check=inject dont_check This will "loop forever" so be careful with
- the inject command...
-\end_layout
-
-\begin_layout Standard
-;# Check some escapings...
-\end_layout
-
-\begin_layout Standard
-; check_escape=inject CheckFileSize ShowAll MaxWarn=1024M MaxCrit=4096M
- "File: foo 
-\backslash
-" WIN=c:
-\backslash
-
-\backslash
-WINDOWS
-\backslash
-
-\backslash
-*.*"
 \end_layout
 
 \begin_layout Subsubsection
@@ -1636,12 +1414,8 @@ check_command check_nt!PROCSTATE!-d SHOWALL -l Explorer.exe
 }
 \end_layout
 
-\begin_layout Subsubsection
-mrtg - a faire
-\end_layout
-
 \begin_layout Subsection
-Resultat
+Résultats NAGIOS
 \end_layout
 
 \begin_layout Standard
@@ -1650,7 +1424,7 @@ On va commencer par monter la machine que nous avons ajouté : if213-06.
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename C:/Documents and Settings/Stef/Bureau/eu reseaux/hosts.jpg
+	filename imagini/hosts.jpg
 	scale 65
 
 \end_inset
@@ -1668,7 +1442,7 @@ La carte gerée pas Nagios:
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename C:/Documents and Settings/Stef/Bureau/eu reseaux/carte.jpg
+	filename imagini/carte.jpg
 	scale 70
 
 \end_inset
@@ -1683,8 +1457,9 @@ On peut aussi voir les details d'etat de chaque host et faire des check
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename C:/Documents and Settings/Stef/Bureau/eu reseaux/PRINT1.jpg
-	scale 60
+	filename imagini/PRINT1.jpg
+	scale 67
+	rotateAngle 90
 
 \end_inset
 
@@ -1698,8 +1473,9 @@ On va essayer eteindre la machine if213-06, faire un check manuellement
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename C:/Documents and Settings/Stef/Bureau/eu reseaux/print2.jpg
-	scale 60
+	filename imagini/print2.jpg
+	scale 40
+	rotateAngle 90
 
 \end_inset
 
@@ -1723,8 +1499,8 @@ Pour voir les problemes au moment actuel on peut cliquer sur Problems.
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename C:/Documents and Settings/Stef/Bureau/eu reseaux/problems.jpg
-	scale 65
+	filename imagini/problems.jpg
+	scale 55
 
 \end_inset
 
@@ -1740,8 +1516,8 @@ Pat contre, si on veut avoir de statistiques au consulter l'historique,
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename C:/Documents and Settings/Stef/Bureau/eu reseaux/report.jpg
-	scale 60
+	filename imagini/report.jpg
+	scale 55
 
 \end_inset
 
@@ -1755,16 +1531,879 @@ On peut aussi regrader l'activité plus en detail d'un seul host.
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename C:/Documents and Settings/Stef/Bureau/eu reseaux/213 report 1 jour.jpg
-	scale 60
+	filename imagini/213 report 1 jour.jpg
+	scale 40
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Section
-Conclusion
+\begin_layout Subsection
+MRTG
+\end_layout
+
+\begin_layout Standard
+On va monitorer le switch 134.214.105.222.
+\end_layout
+
+\begin_layout Standard
+Dans un premier temps on va créer le dossier /var/www/mrtg/134.214.105.222
+ 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+sudo mkdir /var/www/mrtg/A.B.C.D
+\end_layout
+
+\begin_layout Standard
+On ajoute la machine a superviser et donc on crée son fichier de configuration
+ (un fichier de configuration/machine a superviser)
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+cfgmaker --global 'WorkDir: /var/www/mrtg/134.214.105.222' 
+\backslash
+ --ifdesc=descr 
+\backslash
+ --global 'Language: french' 
+\backslash
+ --global 'Options[_]: bits,growright' 
+\backslash
+ public@134.214.105.222 > /var/www/mrtg/134.214.105.222/134.214.105.222.cfg
+\end_layout
+
+\begin_layout Standard
+Gérérer automatiquement les graphes: nous allons donc créer un script SHELL
+ que nous lancerons en utilisant la crontab.
+ Ce script SHELL va lancer MRTG avec le fichier de configuration créé auparavant.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+#!/bin/sh # /var/www/mrtg/134.214.105.222 env LANG=C /usr/bin/mrtg /var/www/mrtg/13
+4.214.105.222/134.214.105.222.cfg
+\end_layout
+
+\begin_layout Standard
+Puis on lui donne les droits en exécution:
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+chmod a+x /usr/local/bin/mrtgcron.sh
+\end_layout
+
+\begin_layout Standard
+Et enfin, on programme la crontab (crontab -l) en ajoutant la ligne suivante:
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+*/5 * * * * /usr/local/bin/mrtgcron.sh
+\end_layout
+
+\begin_layout Subsubsection
+134.214.105.222.cfg
+\end_layout
+
+\begin_layout Standard
+Pour pouvoir voir et afficher les graphes il faut ajouter une entrée pour
+ chaque graphe dans le fichier de configuration 134.214.105.222.cfg (on va mettre
+ ici que le code pour le premier graphe, les 3 autres étant similaires).
+\end_layout
+
+\begin_layout Standard
+# /usr/bin/cfgmaker --global 'WorkDir: /var/www/mrtg/134.214.105.222' --ifdesc=desc
+r --global 'Language: french' --global 'Options[_]: bits,growright' public@134.21
+4.105.222
+\end_layout
+
+\begin_layout Standard
+### Global Defaults
+\end_layout
+
+\begin_layout Standard
+EnableIPv6: no
+\end_layout
+
+\begin_layout Standard
+WorkDir: /var/www/mrtg/134.214.105.222
+\end_layout
+
+\begin_layout Standard
+Language: french
+\end_layout
+
+\begin_layout Standard
+Options[_]: bits,growright
+\end_layout
+
+\begin_layout Standard
+### Interface 101 >> Descr: 'RMON-Port-01-on-unit-1' | Name: '' | Ip: ''
+ | Eth: '' ###
+\end_layout
+
+\begin_layout Standard
+Target[134.214.105.222_101]: 101:public@134.214.105.222:
+\end_layout
+
+\begin_layout Standard
+SetEnv[134.214.105.222_101]: MRTG_INT_IP="" MRTG_INT_DESCR="RMON-Port-01-on-unit-1"
+\end_layout
+
+\begin_layout Standard
+MaxBytes[134.214.105.222_101]: 12500000
+\end_layout
+
+\begin_layout Standard
+Title[134.214.105.222_101]: RMON Port 01 on unit 1 -- switchTP222
+\end_layout
+
+\begin_layout Standard
+PageTop[134.214.105.222_101]: <h1>RMON Port 01 on unit 1 -- switchTP222</h1>
+\end_layout
+
+\begin_layout Standard
+<div id="sysdetails">
+\end_layout
+
+\begin_layout Standard
+<table>
+\end_layout
+
+\begin_layout Standard
+<tr>
+\end_layout
+
+\begin_layout Standard
+<td>System:</td>
+\end_layout
+
+\begin_layout Standard
+<td>switchTP222 in chez nous</td>
+\end_layout
+
+\begin_layout Standard
+</tr>
+\end_layout
+
+\begin_layout Standard
+<tr>
+\end_layout
+
+\begin_layout Standard
+<td>Maintainer:</td>
+\end_layout
+
+\begin_layout Standard
+<td>admin</td>
+\end_layout
+
+\begin_layout Standard
+</tr>
+\end_layout
+
+\begin_layout Standard
+<tr>
+\end_layout
+
+\begin_layout Standard
+<td>Description:</td>
+\end_layout
+
+\begin_layout Standard
+<td>RMON-Port-01-on-unit-1 RMON Port 01 on unit 1 </td>
+\end_layout
+
+\begin_layout Standard
+</tr>
+\end_layout
+
+\begin_layout Standard
+<tr>
+\end_layout
+
+\begin_layout Standard
+<td>ifType:</td>
+\end_layout
+
+\begin_layout Standard
+<td>ethernetCsmacd (6)</td>
+\end_layout
+
+\begin_layout Standard
+</tr>
+\end_layout
+
+\begin_layout Standard
+<tr>
+\end_layout
+
+\begin_layout Standard
+<td>ifName:</td>
+\end_layout
+
+\begin_layout Standard
+<td></td>
+\end_layout
+
+\begin_layout Standard
+</tr>
+\end_layout
+
+\begin_layout Standard
+<tr>
+\end_layout
+
+\begin_layout Standard
+<td>Max Speed:</td>
+\end_layout
+
+\begin_layout Standard
+<td>100.0 Mbits/s</td>
+\end_layout
+
+\begin_layout Standard
+</tr>
+\end_layout
+
+\begin_layout Standard
+</table>
+\end_layout
+
+\begin_layout Standard
+</div>
+\end_layout
+
+\begin_layout Subsection
+Résultats MRTG
+\end_layout
+
+\begin_layout Standard
+On a monitorer pendant 3 jours.
+ Dans le repertoire www/mrtg/134.214.105.222 on a 16 images generées automatiquemen
+t.
+ On a des information par jour, semaine, mois, an pour les 4 ports choisis.
+\end_layout
+
+\begin_layout Standard
+Au jour de demarrage:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename imagini/mrtg1.jpg
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Après 3 jours pour le Managemet Port, 134.214.105.222 on unit 1, swtchTP222
+ :
+\end_layout
+
+\begin_layout Standard
+Image par jour:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename imagini/134.214.105.222_199-day.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Image par semaine:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename imagini/134.214.105.222_199-week.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Image par mois:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename imagini/134.214.105.222_199-month.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Image par an:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename imagini/134.214.105.222_199-year.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+NRPE
+\end_layout
+
+\begin_layout Standard
+A l'aide de NRPE on va superviser de machines Linux.
+ On a ajouter la machine 134.214.105.189 (nom: h4312_linux) et on a changé
+ la configuration du serveur Nagios pour qu'il utilise NRPE (nouveau nom:
+ h4312_localhost).
+\end_layout
+
+\begin_layout Standard
+On a repris la base NRPE qui était fournie et on l'a modifié pour pouvoir
+ ajouter les deux machines.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+NRPE.CFG
+\end_layout
+
+\begin_layout Standard
+# LOG FACILITY
+\end_layout
+
+\begin_layout Standard
+# The syslog facility that should be used for logging purposes.
+\end_layout
+
+\begin_layout Standard
+log_facility=daemon
+\end_layout
+
+\begin_layout Standard
+# PID FILE
+\end_layout
+
+\begin_layout Standard
+# The name of the file in which the NRPE daemon should write it's process
+ ID
+\end_layout
+
+\begin_layout Standard
+# number.
+ The file is only written if the NRPE daemon is started by the root
+\end_layout
+
+\begin_layout Standard
+# user and is running in standalone mode.
+\end_layout
+
+\begin_layout Standard
+pid_file=/var/run/nrpe.pid
+\end_layout
+
+\begin_layout Standard
+# COMMAND ARGUMENT PROCESSING
+\end_layout
+
+\begin_layout Standard
+# This option determines whether or not the NRPE daemon will allow clients
+\end_layout
+
+\begin_layout Standard
+# to specify arguments to commands that are executed.
+ This option only works
+\end_layout
+
+\begin_layout Standard
+# if the daemon was configured with the --enable-command-args configure
+ script
+\end_layout
+
+\begin_layout Standard
+# option.
+ 
+\end_layout
+
+\begin_layout Standard
+#
+\end_layout
+
+\begin_layout Standard
+# *** ENABLING THIS OPTION IS A SECURITY RISK! *** 
+\end_layout
+
+\begin_layout Standard
+# Read the SECURITY file for information on some of the security implications
+\end_layout
+
+\begin_layout Standard
+# of enabling this variable.
+\end_layout
+
+\begin_layout Standard
+#
+\end_layout
+
+\begin_layout Standard
+# Values: 0=do not allow arguments, 1=allow command arguments
+\end_layout
+
+\begin_layout Standard
+dont_blame_nrpe=0
+\end_layout
+
+\begin_layout Standard
+# DEBUGGING OPTION
+\end_layout
+
+\begin_layout Standard
+# This option determines whether or not debugging messages are logged to
+ the
+\end_layout
+
+\begin_layout Standard
+# syslog facility.
+\end_layout
+
+\begin_layout Standard
+# Values: 0=debugging off, 1=debugging on
+\end_layout
+
+\begin_layout Standard
+debug=0
+\end_layout
+
+\begin_layout Standard
+# COMMAND TIMEOUT
+\end_layout
+
+\begin_layout Standard
+# This specifies the maximum number of seconds that the NRPE daemon will
+\end_layout
+
+\begin_layout Standard
+# allow plugins to finish executing before killing them off.
+\end_layout
+
+\begin_layout Standard
+command_timeout=60
+\end_layout
+
+\begin_layout Standard
+# CONNECTION TIMEOUT
+\end_layout
+
+\begin_layout Standard
+# This specifies the maximum number of seconds that the NRPE daemon will
+\end_layout
+
+\begin_layout Standard
+# wait for a connection to be established before exiting.
+ This is sometimes
+\end_layout
+
+\begin_layout Standard
+# seen where a network problem stops the SSL being established even though
+\end_layout
+
+\begin_layout Standard
+# all network sessions are connected.
+ This causes the nrpe daemons to
+\end_layout
+
+\begin_layout Standard
+# accumulate, eating system resources.
+ Do not set this too low.
+\end_layout
+
+\begin_layout Standard
+connection_timeout=300
+\end_layout
+
+\begin_layout Standard
+# COMMAND DEFINITIONS
+\end_layout
+
+\begin_layout Standard
+# Command definitions that this daemon will run.
+ Definitions
+\end_layout
+
+\begin_layout Standard
+# are in the following format:
+\end_layout
+
+\begin_layout Standard
+#
+\end_layout
+
+\begin_layout Standard
+# command[<command_name>]=<command_line>
+\end_layout
+
+\begin_layout Standard
+#
+\end_layout
+
+\begin_layout Standard
+# When the daemon receives a request to return the results of <command_name>
+\end_layout
+
+\begin_layout Standard
+# it will execute the command specified by the <command_line> argument.
+\end_layout
+
+\begin_layout Standard
+#
+\end_layout
+
+\begin_layout Standard
+# Unlike Nagios, the command line cannot contain macros - it must be
+\end_layout
+
+\begin_layout Standard
+# typed exactly as it should be executed.
+\end_layout
+
+\begin_layout Standard
+command[check_users]=/usr/local/nagios/libexec/check_users -w 5 -c 10
+\end_layout
+
+\begin_layout Standard
+command[check_load]=/usr/local/nagios/libexec/check_load -w 15,10,5 -c 30,25,20
+\end_layout
+
+\begin_layout Standard
+command[check_hda1]=/usr/local/nagios/libexec/check_disk -w 20% -c 10% -p
+ /dev/sda1
+\end_layout
+
+\begin_layout Standard
+command[check_zombie_procs]=/usr/local/nagios/libexec/check_procs -w 5 -c
+ 10 -s Z
+\end_layout
+
+\begin_layout Standard
+command[check_total_procs]=/usr/local/nagios/libexec/check_procs -w 150
+ -c 200 
+\end_layout
+
+\begin_layout Standard
+command[check_hdd]=/usr/local/nagios/libexec/check_disk -w 20 -c 10 -p /
+\end_layout
+
+\begin_layout Standard
+command[check_swaphdd]=/usr/local/nagios/libexec/check_swap -w 20 -c 10
+\end_layout
+
+\begin_layout Subsubsection
+h4312_linux.cfg
+\end_layout
+
+\begin_layout Standard
+On a ajouter les services demandés (gestion des users, zombies, processus
+ et charge CPU) pour monitorer la machine.
+ Le code pour le serveur Nagios est similaire a celui-ci et donc on va pas
+ le mettre dans le compte-rendu.
+\end_layout
+
+\begin_layout Standard
+################################################
+\end_layout
+
+\begin_layout Standard
+# Monitoring teacher's linux avec NRPE 
+\end_layout
+
+\begin_layout Standard
+################################################
+\end_layout
+
+\begin_layout Standard
+#########################
+\end_layout
+
+\begin_layout Standard
+## HOST
+\end_layout
+
+\begin_layout Standard
+#########################
+\end_layout
+
+\begin_layout Standard
+define host {
+\end_layout
+
+\begin_layout Standard
+use linux-server
+\end_layout
+
+\begin_layout Standard
+host_name h4312_linux
+\end_layout
+
+\begin_layout Standard
+alias remote Linux
+\end_layout
+
+\begin_layout Standard
+address 134.214.105.189
+\end_layout
+
+\begin_layout Standard
+}
+\end_layout
+
+\begin_layout Standard
+#########################
+\end_layout
+
+\begin_layout Standard
+## SERVICES
+\end_layout
+
+\begin_layout Standard
+#########################
+\end_layout
+
+\begin_layout Standard
+# Charge CPU
+\end_layout
+
+\begin_layout Standard
+define service{
+\end_layout
+
+\begin_layout Standard
+use generic-service
+\end_layout
+
+\begin_layout Standard
+host_name h4312_linux
+\end_layout
+
+\begin_layout Standard
+service_description CPU Load
+\end_layout
+
+\begin_layout Standard
+check_command check_nrpe!check_load
+\end_layout
+
+\begin_layout Standard
+}
+\end_layout
+
+\begin_layout Standard
+# Users
+\end_layout
+
+\begin_layout Standard
+define service{
+\end_layout
+
+\begin_layout Standard
+use generic-service
+\end_layout
+
+\begin_layout Standard
+host_name h4312_linux
+\end_layout
+
+\begin_layout Standard
+service_description Users
+\end_layout
+
+\begin_layout Standard
+check_command check_nrpe!check_users
+\end_layout
+
+\begin_layout Standard
+}
+\end_layout
+
+\begin_layout Standard
+# Zombies
+\end_layout
+
+\begin_layout Standard
+define service{
+\end_layout
+
+\begin_layout Standard
+use generic-service
+\end_layout
+
+\begin_layout Standard
+host_name h4312_linux
+\end_layout
+
+\begin_layout Standard
+service_description Zombies
+\end_layout
+
+\begin_layout Standard
+check_command check_nrpe!check_zombie_procs
+\end_layout
+
+\begin_layout Standard
+}
+\end_layout
+
+\begin_layout Standard
+# Processus
+\end_layout
+
+\begin_layout Standard
+define service{
+\end_layout
+
+\begin_layout Standard
+use generic-service
+\end_layout
+
+\begin_layout Standard
+host_name h4312_linux
+\end_layout
+
+\begin_layout Standard
+service_description Processus
+\end_layout
+
+\begin_layout Standard
+check_command check_nrpe!check_total_procs
+\end_layout
+
+\begin_layout Standard
+}
+\end_layout
+
+\begin_layout Subsubsection
+NAGIOS.CFG
+\end_layout
+
+\begin_layout Standard
+# Definitions for monitoring the local (Linux) host
+\end_layout
+
+\begin_layout Standard
+cfg_file=/usr/local/nagios/etc/objects/h4312_localhost.cfg
+\end_layout
+
+\begin_layout Standard
+# Definitions for monitoring a Windows machine
+\end_layout
+
+\begin_layout Standard
+cfg_file=/usr/local/nagios/etc/objects/windows.cfg
+\end_layout
+
+\begin_layout Subsection
+Résultats NRPE
+\end_layout
+
+\begin_layout Standard
+On a ajouté la machine linux monitorée a l'aide de NRPE:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename imagini/map_nrpe.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Le client sur la machine if213-06 est éteint.
+ On peut visualiser pour la machine Linux le status des parametres qu'on
+ a ajouté :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename imagini/status_nrpe.PNG
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Analyse critique de l'Installation/Utilisation de Nagios
+\end_layout
+
+\begin_layout Standard
+Le gros avantage de Nagios est le fait que c'est un outil qui dispose d'une
+ documentation très fournie.
+ Il est très modulable et flexible grâce à son fonctionnement par fichier
+ de configuration.
+ Mais ce qui fait sa force fait aussi sa faiblesse car ces fichiers de configura
+tions multiples peuvent poser des problème s'il y en a beaucoup, particulièremen
+t lorsqu'on n'est pas habitué à cette méthode de fonctionnement.
+ Cela nécessite une bonne organisation pour s'y retrouver mais lorsqu'on
+ est bien organisé, on peut facilement automatiser le traitement des information
+s grâce à des scripts.
+ 
+\end_layout
+
+\begin_layout Standard
+Son installation n'est pas très compliquée.
+ C'est un simple système client-serveur.
+ On installe le serveur puis les clients puis il faut configurer.
+ Il faut configurer les clients pour qu'ils acceptent les connexions et
+ les échanges d'information.
+ Il faut configurer le serveur pour chaque client que l'on ajoute.
+ Il faut savoir que l'on peut utiliser un seul fichier de configuration
+ pour tout le programme mais ce n'est pas conseillé pour une raison de lisibilit
+é.
+ Il faut donc bien réfléchir à l'arborescence des fichiers dès le départ,
+ ce qui peut être difficile lorsque l'on n'a pas l'habitude.
+\end_layout
+
+\begin_layout Standard
+Son utilisation par l'interface web est assez intuitive et permet une navigation
+ rapide entre les différents services associés aux machines monitorées.
+ La maintenance (ajout de nouvelles machines, nouveau services, ...) dépend
+ beaucoup de la façon dont ont été créé les fichiers de configuration au
+ départ.
+ Cela peut donc varier entre très simple, voire automatisé et très compliqué.
+ Pour nous, une fois que nous avons compris comment tout s'agençait, cela
+ a été plutôt facile.
+\end_layout
+
+\begin_layout Standard
+C'est un outil qui permet de regrouper les informations sur toutes les machines
+ surveillées, ce qui est très pratique mais il ne fait que du monitoring
+ système et ne permet pas le monitoring réseau.
+ Il ne reconnaît pas non plus la topologie réseau, ce qui peut poser quelques
+ problèmes, notamment lorsque les machines sont équipées d'adresses IP dynamique
+s (les fichiers de configurations ne peuvent pas prendre en compte ce type
+ de cas).
+ Ce pourrait être un outil très puissant couplé avec une application de
+ monitoring réseau.
 \end_layout
 
 \end_body
