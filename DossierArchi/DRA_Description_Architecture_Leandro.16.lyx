@@ -1,0 +1,329 @@
+#LyX 2.0.0rc3 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+
+\end_preamble
+\use_default_options true
+\language french
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\float_placement h
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\leftmargin 2cm
+\topmargin 2.5cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Description de la Solution
+\end_layout
+
+\begin_layout Subsection
+Routeurs Firewall VPN
+\end_layout
+
+\begin_layout Standard
+Ces elements sont destiner à transporter les messages à l'intérieur des
+ sous-réseaux.
+ Comme une règle de base de sécurité, on utilise des firewalls pour mieux
+ protéger ces réseaux.
+\end_layout
+
+\begin_layout Standard
+De plus, le réseaux virtuel permet d'avoir un réseau logique qui intègre
+ tous les campus et un accès distant sécurisé.
+\end_layout
+
+\begin_layout Standard
+Le router choisi est le 
+\emph on
+VPN S@N 2000
+\emph default
+ (4 ports Ethernet 10/100Mbits, 128 tunnels VPN en parallel).
+\end_layout
+
+\begin_layout Subsubsection*
+Configuration
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Firewall
+\series default
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+bloquer toutes les requês venus de l'exterieur
+\end_layout
+
+\begin_layout Itemize
+redirection de port vers le S@N.
+\end_layout
+
+\begin_layout Itemize
+gerer des profils de permissions pour les postes connectés via VPN, ayant
+ comme permission minimale l'authorisation de la connexion au serveur HTTP
+ seulement.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Service DHCP:
+\series default
+ desactivé, vu que un serveur dedié sera mis en place.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+VPN
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+la connexion est effectuée par l'adresse IP du router du campus et le port
+ associé à cette redirection
+\end_layout
+
+\begin_layout Itemize
+2 tunnels permanents seront établis, pour pouvoir connecter aux deux autres
+ S@N
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Du au plan de nommage effectué voir section YY, la juxtaposition des 3 réseaux
+ est assez simple.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+permettre les connexions depuis un client VPN (possibiliter alors l'accès
+ distant).
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Switches
+\end_layout
+
+\begin_layout Standard
+Les switches seront utilisés pour:
+\end_layout
+
+\begin_layout Itemize
+interconnecter les elements d'une certaine plaque
+\end_layout
+
+\begin_layout Itemize
+interconnecter les serveurs et postes supervision
+\end_layout
+
+\begin_layout Itemize
+interconnecter l'ensemble des plaques
+\end_layout
+
+\begin_layout Itemize
+segmenter le réseau VPN, par l'utilisation de VLANS
+\end_layout
+
+\begin_layout Standard
+Les switches choisis sont:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+TCM ESM 163F23F0:
+\series default
+ 16 ports, VLAN Niveau 3, 10/100 Mbits.
+ 
+\emph on
+Utilisé pour interconnecter les plaques
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+499 NES 181 00:
+\series default
+ 8 ports, 10/100 Mbits.
+ 
+\emph on
+Utilisé à l'intérieur d'une plaque et aussi pour interconnecter les serveurs
+ et le poste supervision.
+\end_layout
+
+\begin_layout Standard
+La division en VLANs se fera selon les critères suivants:
+\end_layout
+
+\begin_layout Itemize
+un VLAN pour la manipulation.
+\end_layout
+
+\begin_layout Itemize
+un VLAN pour les serveurs et le poste de supervision.
+\end_layout
+
+\begin_layout Subsection
+Serveurs DHCP, DNS et HTTP
+\end_layout
+
+\begin_layout Standard
+Des serveurs DHCP et DNS dédiés seront mises en place.
+ Ses objectifs, sont, respectivement, l'adressage dynamique (et alors une
+ configuration plus simple) et l'attribution de noms aux machines.
+ 
+\end_layout
+
+\begin_layout Standard
+Le serveur HTTP devra fournir une interface Web pour la surveillance des
+ plateformes et équipements industrielles.
+ Pour raisons de sécurité, il ne sera pas accessible depuis l'exterieur
+ sauf par connexion VPN.
+ Chaque site aura son serveur HTTP, ce qui apporte une bon efficacité par
+ rapport aux temps de réponse.
+ 
+\end_layout
+
+\begin_layout Standard
+Pour économizer les couts avec des logiciels, on propose d'utiliser le système
+ d'exploitation orienté serveur 
+\emph on
+Ubuntu Server
+\emph default
+, et le configurer avec les paquets suivants:
+\end_layout
+
+\begin_layout Itemize
+Pour le serveur DHCP:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+isc-dhcp-server:
+\series default
+ serveur DHCP implementé par le ICS (Internet Software Consortium)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Pour le serveur DNS:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+bind9:
+\series default
+ le serveur BIND (Berkeley Internet Name Domain) est le serveur DNS le plus
+ connu et utilisé, et en plus supporté par le ICS.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Pour le serveur HTTP, les logiciels mises en place dependent des technologies
+ de développement envisagés.
+ Quelques logiciels associés (tous disponibles sur le système proposé) sont:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Apache 2
+\end_layout
+
+\begin_layout Itemize
+PHP 5
+\end_layout
+
+\begin_layout Itemize
+Ruby on Rails
+\end_layout
+
+\begin_layout Itemize
+Django
+\end_layout
+
+\begin_layout Itemize
+Glassfish
+\end_layout
+
+\begin_layout Itemize
+Mono
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+plateforme .NET disponible sur des systèmes GNU/Linux avec support à serveurs
+ Web ASP.NET
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Pour tous les serveurs:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+openssh-server:
+\series default
+ Pour permettre l'acces à distance et configuration remote des serveurs.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
