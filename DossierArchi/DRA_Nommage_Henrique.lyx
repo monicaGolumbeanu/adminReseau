@@ -1,0 +1,1455 @@
+#LyX 1.6.9 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\language french
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family sfdefault
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement h
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\leftmargin 2cm
+\topmargin 2.5cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box ovalbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Title
+Titre
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\series bold
+Auteurs:
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+NOMS
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features>
+<column alignment="center" valignment="top" width="5cm">
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="left" valignment="top" width="4cm">
+<column alignment="left" valignment="top" width="3cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Référence
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Version
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Version du document
+\end_layout
+
+\end_inset
+
+ 1.0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Avancement
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+☐ Validé
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dernière mise à jour
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+☐ Validé après modif.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+☐ Revalidé
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="4">
+<features>
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="center" valignment="top" width="4cm">
+<row>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none" width="4cm">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Visa
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Date
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Responsable
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Nom du responsable
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lyxline
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lyxline
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Historique du document
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="4">
+<features>
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="7cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Date
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Auteur
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Version
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Sujet de la modification
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Solution pour le nommage et l'association des adresses IP
+\end_layout
+
+\begin_layout Subsection
+Gestion de la politique de nommage
+\end_layout
+
+\begin_layout Subsubsection
+Definition de la politique
+\end_layout
+
+\begin_layout Standard
+Les équipements du réseau se séparent en deux catégories :
+\end_layout
+
+\begin_layout Itemize
+les éléments des platines de manipulation ; 
+\end_layout
+
+\begin_layout Itemize
+les éléments servant à faire fonctionner le réseau ou offrant des services
+ (serveurs, poste de supervision).
+ 
+\end_layout
+
+\begin_layout Standard
+Afin de nous retrouver dans le réseau, nous mettons en place un serveur
+ DNS qui permettra d’associer facilement des noms compréhensibles à des
+ adresses IP.
+ Tous les noms seront composés de différents champs composés de caractères
+ alphanumériques et de tirets uniquement.
+ Ces champs seront séparés par des « _ ».
+ 
+\end_layout
+
+\begin_layout Standard
+Le premier champ correspondra à l’identifiant du site d’exploitation.
+ Ceci nous permettra de situer directement l’équipement.
+\end_layout
+
+\begin_layout Itemize
+Site central: lyon-aip
+\end_layout
+
+\begin_layout Itemize
+Site GE: lyon-ge
+\end_layout
+
+\begin_layout Itemize
+Site Roanne: roanne-iut
+\end_layout
+
+\begin_layout Standard
+Ensuite, s’il s’agit d’un équipement de platine, deux champs suivront :
+\end_layout
+
+\begin_layout Itemize
+Un identifiant de la platine de manipulation, par exemple : bus-can, bus-modbus,
+ etc.
+\end_layout
+
+\begin_layout Itemize
+• Un identifiant de l’équipement, composé de manière générique sous la forme
+ «eqp-XX», où XX est un nombre commençant à 01, par exemple : eqp-01, eqp-02,
+ etc.
+\end_layout
+
+\begin_layout Standard
+Ainsi, pour un équipement de platine, le nom DNS pourra ressembler à :
+\end_layout
+
+\begin_layout Itemize
+roanne-iut_bus-can_eqp-01
+\end_layout
+
+\begin_layout Itemize
+lyon-aip_bus-modbus_eqp-05
+\end_layout
+
+\begin_layout Standard
+Si l’équipement est un élément servant à faire fonctionner le réseau, le
+ deuxième champ contiendra un identifiant permettant de le désigner spécialement.
+\end_layout
+
+\begin_layout Itemize
+Serveurs DHCP & DNS:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+serv-dhcp-dns
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Serveurs vidéo:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+serv-video-XX (où XX est un numéro commençant à 01)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Serveur HTTP:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+serv-http
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Poste de supervision:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+poste-supervision
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Ainsi, pour un équipement de fonctionnement du réseau, le nom DNS pourra
+ ressembler à:
+\end_layout
+
+\begin_layout Itemize
+lyon-aip_serv_http
+\end_layout
+
+\begin_layout Itemize
+lyon-ge_serv-dhcp-dns
+\end_layout
+
+\begin_layout Itemize
+roanne-iut_poste-supervision
+\end_layout
+
+\begin_layout Subsection
+Organisation du service de DNS multi-domaines
+\end_layout
+
+\begin_layout Subsubsection
+Organisation globale et integration dans les differents campus
+\end_layout
+
+\begin_layout Standard
+Afin de mettre en place la politique de nommage décrite ci-dessus, nous
+ devons mettre en place des serveurs DNS.
+ Pour assurer la meilleure fiabilité du système, nous avons un serveur DNS
+ par site : Ainsi, même si la liaison entre les sites est défaillante, le
+ système pourra fonctionner en local.
+ 
+\end_layout
+
+\begin_layout Standard
+Les serveurs DNS (adresses IP 10.0.0.2, 10.0.1.2 et 10.0.2.2) seront placés sur chaque
+ site, juste en-dessous du routeur principal du site (voir schéma global).
+ Ce dernier sera configuré avec le DNS local en tant que DNS primaire et
+ un DNS d’un autre site en secondaire.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Organisation des DNS et configuration avec les differentes types d'enregistremen
+ts a gerer
+\end_layout
+
+\begin_layout Standard
+Lors de l’ajout d’un équipement sur le réseau, il faudra renseigner plusieurs
+ configurations de la présence de ce nouvel élément.
+ Notamment, il faudra faire l’association entre l’IP de l’équipement et
+ son nom DNS.
+ 
+\end_layout
+
+\begin_layout Standard
+Pour cela, nous imposons que les ajouts de configuration se fassent sur
+ le serveur DNS du site principal.
+ Ensuite, comme tous les serveurs devront être configurés à l’identique,
+ un outil d’administration réseau devra permettre de copier facilement,
+ voir automatiquement, le fichier de configuration d’un site à l’autre.
+ 
+\end_layout
+
+\begin_layout Standard
+Au niveau du fichier de configuration même, on devra spécifier les enregistremen
+ts suivants pour chaque équipement:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+A
+\series default
+ – pour faire correspondre un nom d’hôte à une adresse IPv4.
+\end_layout
+
+\begin_layout Standard
+Comme on utilise l’adressage en IPv4, il est évident que ce type d’enregistremen
+t doit figurer dans un serveur terminal.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+PTR
+\series default
+ – pour associer une adresse IP à un nom d’hôte (l’inverse du type A)
+\end_layout
+
+\begin_layout Standard
+Il nous faut ceci pour pouvoir trouver le nom d’hôte en donnant une adresse
+ IP.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+NS
+\series default
+ – définit les serveurs DNS du domaine.
+\end_layout
+
+\begin_layout Standard
+Nous avons 1 serveur DNS principal et des auxiliaires qu’il faut définir,
+ donc forcément ce type d’enregistrement va figurer dans un serveur terminal.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+SOA
+\series default
+ – donne les informations générales de la zone : serveur principal, etc.
+\end_layout
+
+\begin_layout Standard
+Pour avoir un résumé des informations générales, ce type d’enregistrement
+ figurera aussi sur le serveur.
+ Ainsi, en faisant une requête de ce type on pourra avoir des informations
+ sur le serveur DNS principal, un courriel de contact, la durée d’expiration,
+ etc.
+\end_layout
+
+\begin_layout Subsection
+Mise en place de l'infrastructure de DHCP
+\end_layout
+
+\begin_layout Subsubsection
+Gestion des configurations
+\end_layout
+
+\begin_layout Standard
+Il y aura un serveur DHCP par site.
+ Ainsi, même en cas de rupture de liaison entre les sites, les équipements
+ pourront fonctionner en local.
+ Ces serveurs se trouveront sur les même machines que les serveurs DNS,
+ directement sous le routeur principal de chaque site.
+\end_layout
+
+\begin_layout Standard
+Les serveurs DHCP seront configurés pour donner une adresse IP en fonction
+ de l’adresse MAC de l’équipement : ils reconnaîtront l’équipement et lui
+ donneront son adresse sur le site en question.
+ Chaque serveur DHCP possède un fichier de configuration complet (de tout
+ équipement de tout site).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="6">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Site
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Adresse Réseau
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Masque de sous-réseau
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Plage d'adresses IP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Passerelle par défaut
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IP du DNS
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+AIP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.0.0.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+255.255.255.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.0.0.0/24
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.0.0.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.0.0.2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.0.1.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+255.255.255.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.0.1.0/24
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.0.1.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.0.1.2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ROanne
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.0.2.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+255.255.255.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.0.2.0/24
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.0.2.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.0.2.2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Le serveur DHCP peut détecter de quel sous-réseau vient la demande grâce
+ au relais DHCP.
+ Un agent de relais relaie les paquets DHCP sur le côté distant même s'ils
+ sont des paquets de diffusion.
+ Nous utiliserons donc un tel relais qui fera parti de toutes VLAN du site
+ respectif et qui permet au serveur DHCP de gérer des portées différentes
+ pour les sous-réseaux.
+ 
+\end_layout
+
+\begin_layout Standard
+Afin de synchroniser les configurations des DHCP, qui sont identiques pour
+ tous les serveurs DHCP, nous utiliserons les fonctionnalités d’un logiciel
+ d’administration réseau décrit plus loin.
+ Ainsi, nous n’aurons qu’à configurer le serveur DHCP du site principal
+ pour que les autres serveurs soient à jour en quelques minutes seulement,
+ sans intervention humaine.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Gestion des adresses IP/MAC
+\end_layout
+
+\begin_layout Standard
+Afin de garantir un réseau cohérent, nous devons définir un plan d’adressage.
+ Nous adoptons la politique suivante:
+\end_layout
+
+\begin_layout Itemize
+Un identifiant unique entre 10 et 254 sera affecté à chaque équipement :
+ ce numéro sera utilisé en octet de poids faible dans l’adresse IP de l’équipeme
+nt.
+\end_layout
+
+\begin_layout Itemize
+Un identifiant pour identifier le site d’exploitation : ce numéro sera utilisé
+ dans le troisième octet de l’adresse (voir adresses des sous-réseaux sur
+ le schéma).
+\end_layout
+
+\begin_layout Standard
+Exemple: Un équipement avec une adresse MAC 00 :11 :22 :33 :44 :55 aura
+ associé l’identifiant 150.
+ Ensuite sur le sous réseau 10.0.0.0 il aura le serveur DHCP lui associera
+ l’IP 10.0.0.150.
+ Sur le sous-réseau 10.0.1.0 il recevra 10.0.1.150 ainsi de suite.
+\end_layout
+
+\begin_layout Standard
+Au premier branchement d’un équipement, un administrateur réseau choisira
+ le numéro affecté à l’équipement.
+ Il faudra alors mettre à jour la configuration des serveurs DHCP.
+ Il suffira de mettre à jour celle du site principal et les autres serveurs
+ se mettront à jour en quelques minutes seulement, sans intervention humaine,
+ grâce aux fonctionnalités d’un logiciel d’administration réseau décrit
+ plus loin, par réplication du fichier de configuration.
+\end_layout
+
+\begin_layout Standard
+Les adresses MAC peuvent être récupérées de manières différentes :
+\end_layout
+
+\begin_layout Itemize
+Si l’équipement réseau possède une étiquette de sa carte réseau, l’adresse
+ MAC y en inscrit
+\end_layout
+
+\begin_layout Itemize
+Si l’équipement possède un écran et un système d’exploitation il est possible
+ de récupérer son adresse MAC par le biais de la ligne de commande
+\end_layout
+
+\begin_layout Itemize
+Une dernière solution est de se connecter directement par câble réseau à
+ l’équipement avec un ordinateur qui comporte un serveur DHCP et de faire
+ une requête pour obtenir l’adresse MAC.
+\end_layout
+
+\begin_layout Subsection
+Procedure d' ajout de materiel
+\end_layout
+
+\begin_layout Standard
+Nous avons vu que notre architecture nécessitera que quelques interventions
+ soient faites lors de l’ajout d’un nouveau matériel sur le réseau.
+ 
+\end_layout
+
+\begin_layout Standard
+Pour récapituler, il faudra:
+\end_layout
+
+\begin_layout Itemize
+Récupérer l’adresse MAC de l’identifiant et y associer un identifiant entre
+ 10 et 254
+\end_layout
+
+\begin_layout Itemize
+Ajouter les réservations d’IP associé à l’adresse MAC dans la configuration
+ DHCP.
+\end_layout
+
+\begin_layout Itemize
+Ajouter les enregistrements DNS associant les noms DNS aux IP.
+\end_layout
+
+\begin_layout Itemize
+Au niveau des switches, configurer à quels VLAN appartient le nouvel équipement
+ (sur chaque switch)
+\end_layout
+
+\begin_layout Standard
+Les configurations DNS et DHCP se répliqueront automatiquement sur tous
+ les serveurs grâce aux outils d’administration mis en place.
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\end_body
+\end_document
