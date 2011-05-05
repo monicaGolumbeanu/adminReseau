@@ -1,0 +1,1369 @@
+#LyX 1.6.8 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\language french
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family sfdefault
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement h
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\leftmargin 2cm
+\topmargin 2.5cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box ovalbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Title
+Dossier Architecture
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\series bold
+Auteurs:
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Monica Golumbeanu, Billy Pitiot, Leandro Resente Mattioli
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features>
+<column alignment="center" valignment="top" width="5cm">
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="left" valignment="top" width="4cm">
+<column alignment="left" valignment="top" width="3cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Référence
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Version
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Version du document
+\end_layout
+
+\end_inset
+
+ 1.0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Avancement
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+☐ Validé
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dernière mise à jour
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+☐ Validé après modif.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+☐ Revalidé
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="4">
+<features>
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="center" valignment="top" width="4cm">
+<row>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none" width="4cm">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Visa
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Date
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Responsable
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Nom du responsable
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lyxline
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lyxline
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+Le document présent constitue la répose donnée par notre équipe de consultants
+ à la demande de restructuration de l'architecture réseau de AIPRAO.
+ Le dossier est structuré dans deux parties.
+ La première partie constitue un rapport décisionnel addrésé à la Direction
+ de l'AIP fournissant l'information nécessaire à sa décision de lancer le
+ projet.
+ La deuxième partie décrit une solution appropriée en proposant des prototypes
+ réalisés en réponse aux différentes facettes du cahier des charges.
+ Les annexes contiennent des éléments technologiques et organisationnels
+ liés à l'organisation de l'environnement d'exploitation ainsi que des informati
+ons pratiques utiles pour la configuration des équipements.
+\end_layout
+
+\begin_layout Section
+Objectifs principaux pour la nouvelle architecture
+\end_layout
+
+\begin_layout Standard
+La Direction de AIPRAO a donné un cadrage définissant les objectifs pour
+ l'évolution de l'infrastructure:
+\end_layout
+
+\begin_layout Enumerate
+L'architecture doit favoriser les regroupements de moyens
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+La Direction souhaite pouvoir mutualiser l'exploitation des systèmes industriels
+ - le site central ou un autre site puisse héberger (d'une manière temporaire
+ ou non) les ressources allouées usuellement à d'autres entités.
+ Ainsi, une platforme industrielle virtuelle sera répartie entre des postes
+ physiquement éloignées.
+ L'objectif est la minimisation des transports pour les usagers.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+L'architecture doit permettre aux entités de bénéficier de services communs
+ pour travailler à distance
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Des solutions de surveillance visuelle et de contrôle à distance doivent
+ être mises en place tout en intégrant la protection des entités et de l'infrast
+ructure globale.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Optimisation et performance
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+La nouvelle architecture permettra de réduire les pertes de performance
+ actuelles.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Mobilité
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Le déplacement d'équipement entre les sites doit être possible et facile
+ à réaliser avec un minimum d'opérations simples de configuration.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Evolutivité
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+L'ajout de tout matériel nouveau (serveur, platine, machine, etc.) doit être
+ possible et facile à réaliser.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Securité
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+La surveillance du système entier doit être possible.
+ Par conséquent, un système d'administration doit être mis en place.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Organisation de l'architecture
+\end_layout
+
+\begin_layout Standard
+Les parties qui suivent contiennent la proposition d'architecture qui répond
+ aux demandes du client.
+ Toutes les choix sont argumentées.
+\end_layout
+
+\begin_layout Subsection
+Description générale
+\end_layout
+
+\begin_layout Standard
+L'architecture deployée sur les trois sites (AIP, GE, Roanne) est présentée
+ dans la figure suivante.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename archi.png
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Organisation du réseau sur trois sites
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La liaison entre les différentes sites est réalisée par des tunnels VPN
+ qui offre un accès sécurisé ainsi qu'un service d'authentification efficace
+ pour les différents utilisateurs accédant aux plateformes industrielles
+ (voir Figure 2).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename connexionVPN.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Liaison par VPN entre les sites
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Le routeur S@N sera utilisé pour interconnecter des différentes sites.
+ Chaque site pourra avoi plusieurs connexion VPN en parallèle.
+ Un VPN global sera créé qui permettra le partage des ressources en toute
+ securité.
+\end_layout
+
+\begin_layout Standard
+Un utilisateur externe (étudiant, professeur, etc.) pourra se connecter à
+ tout moment par VPN depuis l'extérieur et avoir ainsi accès aux ressources
+ hebergées par le site auquel il s'est connecté.
+\end_layout
+
+\begin_layout Standard
+Dans chaque site deux VLANs ont été mis en place.
+ Un contient que le matériel industriel (les plaques avec les automates)
+ et l'autre contient le reste.
+ La configuration realisée permet de mettre en place plusieurs VLANs si
+ on désire.
+ 
+\end_layout
+
+\begin_layout Standard
+Le fait d'avoir reservé un VLAN spécialement pour l'équipement industriel
+ permet facilement d'avoir un cloisonnement des données.
+ En effet, le broadcast réalisé par les automates restera dans le VLAN et
+ n'influencera pas le reste.
+\end_layout
+
+\begin_layout Standard
+Chaque site possède un serveur DHCP et un serveur DNS.
+ Le serveur DHCP s'occupera d'associer des adresses IP en utilisant des
+ DHCP relais entre les différentes réseaux tandis que le serveur DNS géra
+ le nommage.
+ Les politiques de nommage et d'addressage seront détaillées dans les sections
+ qui suivent.
+\end_layout
+
+\begin_layout Standard
+Les configurations entre les sites seront partagées par l'intermédiaire
+ d'un système de monitoring.
+\end_layout
+
+\begin_layout Subsection
+Argumentation
+\end_layout
+
+\begin_layout Standard
+La partie qui suit décrit comment la solution proposée peut répondre à la
+ demande du client et atteindre les objectifs proposés.
+\end_layout
+
+\begin_layout Enumerate
+L'architecture doit favoriser les regroupements de moyens
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Ceci est possible grâce à l'architecture VLAN proposée.
+ Supposant qu'on veut mettre ensemble deux équipements physiquement éloignés,
+ cela est possible en les mettant dans le même VLAN et donc dans le même
+ sous réseau.
+ Cette opération est possible via une interface web et ne nécessite pas
+ des actions physiques (branchêment, débranchement, ect.).
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+L'architecture doit permettre aux entités de bénéficier de services communs
+ pour travailler à distance
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Comme chaque platforme intègre un serveur HTTP, il sera possible de se connecter
+ de n'importe quelle poste possedant accès Internet par l'intérmediaire
+ d'un navigateur web sur un des sites (AIP, GE, Roanne, ...).
+ L'accès aux plaques industrielles sera donc assuré via une interface web.
+ 
+\begin_inset Newline newline
+\end_inset
+
+L'accès nécessite une authentification par VPN qui assure une connexion
+ securisée.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Optimisation et performance
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Le découpage en VLANs permet le cloisonnement des données et apporte un
+ plus des performances et d'optimisation à l'architecture.
+ Le traffic des paquets broadcast est gardé à l'intérieur des VLANs spécialement
+ crées ce qui allège le traffic global et augmente les performances.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Mobilité
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Les politiques de nommage et d'adressage proposées rendent possible le déplaceme
+nt et l'installation facile d'équipement entre les sites.
+ Ces deux politiques sont détaillées dans les parties qui vont suivre.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Evolutivité
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+L'organisation en VLANs et la politique de nommage rendent facile l'ajout
+ de tout matériel ou toute augmentation physique du réseau.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Securité
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Des caméras de surveillance seront installées et pourront être suivies depuis
+ une machine.
+ Chaque site contient un serveur qui centralise les enregistrements vidéo.
+ A tout moment un superviseur pourra se connecter au serveur vidéo et consulter
+ les caméras de vidéosurveillance.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Description détaillée
+\end_layout
+
+\begin_layout Standard
+Cette section comprend la description détaillée de chaque équipement utilisé
+ dans l'architecture.
+\end_layout
+
+\begin_layout Subsubsection
+Routeurs Firewall VPN
+\end_layout
+
+\begin_layout Standard
+Ces elements sont destiner à transporter les messages à l'intérieur des
+ sous-réseaux.
+ Comme une règle de base de sécurité, on utilise des firewalls pour mieux
+ protéger ces réseaux.
+\end_layout
+
+\begin_layout Standard
+De plus, le réseaux virtuel permet d'avoir un réseau logique qui intègre
+ tous les campus et un accès distant sécurisé.
+\end_layout
+
+\begin_layout Standard
+Le router choisi est le 
+\emph on
+VPN S@N 2000
+\emph default
+ (4 ports Ethernet 10/100Mbits, 128 tunnels VPN en parallel).
+\end_layout
+
+\begin_layout Subsubsection*
+Configuration
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Firewall
+\series default
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+bloquer toutes les requês venus de l'exterieur
+\end_layout
+
+\begin_layout Itemize
+redirection de port vers le S@N.
+\end_layout
+
+\begin_layout Itemize
+gerer des profils de permissions pour les postes connectés via VPN, ayant
+ comme permission minimale l'authorisation de la connexion au serveur HTTP
+ seulement.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Service DHCP:
+\series default
+ desactivé, vu que un serveur dedié sera mis en place.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+VPN
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+la connexion est effectuée par l'adresse IP du router du campus et le port
+ associé à cette redirection
+\end_layout
+
+\begin_layout Itemize
+2 tunnels permanents seront établis, pour pouvoir connecter aux deux autres
+ S@N
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Du au plan de nommage effectué voir section YY, la juxtaposition des 3 réseaux
+ est assez simple.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+permettre les connexions depuis un client VPN (possibiliter alors l'accès
+ distant).
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Switches
+\end_layout
+
+\begin_layout Standard
+Les switches seront utilisés pour:
+\end_layout
+
+\begin_layout Itemize
+interconnecter les elements d'une certaine plaque
+\end_layout
+
+\begin_layout Itemize
+interconnecter les serveurs et postes supervision
+\end_layout
+
+\begin_layout Itemize
+interconnecter l'ensemble des plaques
+\end_layout
+
+\begin_layout Itemize
+segmenter le réseau VPN, par l'utilisation de VLANS
+\end_layout
+
+\begin_layout Standard
+Les switches choisis sont:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+TCM ESM 163F23F0:
+\series default
+ 16 ports, VLAN Niveau 3, 10/100 Mbits.
+ 
+\emph on
+Utilisé pour interconnecter les plaques
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+499 NES 181 00:
+\series default
+ 8 ports, 10/100 Mbits.
+ 
+\emph on
+Utilisé à l'intérieur d'une plaque et aussi pour interconnecter les serveurs
+ et le poste supervision.
+\end_layout
+
+\begin_layout Standard
+La division en VLANs se fera selon les critères suivants:
+\end_layout
+
+\begin_layout Itemize
+un VLAN pour la manipulation.
+\end_layout
+
+\begin_layout Itemize
+un VLAN pour les serveurs et le poste de supervision.
+\end_layout
+
+\begin_layout Subsubsection
+Serveurs DHCP, DNS et HTTP
+\end_layout
+
+\begin_layout Standard
+Des serveurs DHCP et DNS dédiés seront mises en place.
+ Ses objectifs, sont, respectivement, l'adressage dynamique (et alors une
+ configuration plus simple) et l'attribution de noms aux machines.
+ 
+\end_layout
+
+\begin_layout Standard
+Le serveur HTTP devra fournir une interface Web pour la surveillance des
+ plateformes et équipements industrielles.
+ Pour raisons de sécurité, il ne sera pas accessible depuis l'exterieur
+ sauf par connexion VPN.
+ Chaque site aura son serveur HTTP, ce qui apporte une bon efficacité par
+ rapport aux temps de réponse.
+ 
+\end_layout
+
+\begin_layout Standard
+Pour économizer les couts avec des logiciels, on propose d'utiliser le système
+ d'exploitation orienté serveur 
+\emph on
+Ubuntu Server
+\emph default
+, et le configurer avec les paquets suivants:
+\end_layout
+
+\begin_layout Itemize
+Pour le serveur DHCP:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+isc-dhcp-server:
+\series default
+ serveur DHCP implementé par le ICS (Internet Software Consortium)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Pour le serveur DNS:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+bind9:
+\series default
+ le serveur BIND (Berkeley Internet Name Domain) est le serveur DNS le plus
+ connu et utilisé, et en plus supporté par le ICS.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Pour le serveur HTTP, les logiciels mises en place dependent des technologies
+ de développement envisagés.
+ Quelques logiciels associés (tous disponibles sur le système proposé) sont:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Apache 2
+\end_layout
+
+\begin_layout Itemize
+PHP 5
+\end_layout
+
+\begin_layout Itemize
+Ruby on Rails
+\end_layout
+
+\begin_layout Itemize
+Django
+\end_layout
+
+\begin_layout Itemize
+Glassfish
+\end_layout
+
+\begin_layout Itemize
+Mono
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+plateforme .NET disponible sur des systèmes GNU/Linux avec support à serveurs
+ Web ASP.NET
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Pour tous les serveurs:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+openssh-server:
+\series default
+ Pour permettre l'acces à distance et configuration remote des serveurs.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Gestion du nommage et de l'adressage
+\end_layout
+
+\begin_layout Standard
+Le nommage des machines est indispensable pour une lecture facile par l'œil
+ humain et surtout pouur une mémorisation et une utilisation plus intuitive
+ qu'une adresse IP.
+ Nous avons donc choisi une politique de nommage qui uniformisera la méthode
+ de nommage des différentes machines sur le réseau.
+\end_layout
+
+\begin_layout Standard
+Le nom d'une machine sera composé de plusieurs champs distincts.
+ Chacun de ces champs se retrouve dans l'adresse IP, ce qui permet d'associer
+ facilement une adresse à une machine.
+ Ces champs sont les suivants :
+\end_layout
+
+\begin_layout Itemize
+Identifiant du lieu où se trouve la machine.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Exemple : lyon_aip ==> IP correspondante : 10.0.X.X
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hspace{}
+\length 1.6cm
+\end_inset
+
+lyon_ge ==> IP correspondante : 10.1.X.X
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hspace{}
+\length 1.6cm
+\end_inset
+
+roanne_tp1 ==> IP correspondante : 10.2.X.X
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Type de l'équipement
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Exemple : Routeur ==> IP correspondante : 10.X.0.1 dans VLAN1/ 10.X.1.1 dans VLAN2
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hspace{}
+\length 1.9cm
+\end_inset
+
+Serveur DNS ==> IP correspondante : 10.X.0.4
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hspace{}
+\length 1.9cm
+\end_inset
+
+Serveur données Windows ==> IP correspondante : 10.X.0.3
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hspace{}
+\length 1.9cm
+\end_inset
+
+Serveur DHCP ==> IP correspondante : 10.X.0.5
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hspace{}
+\length 1.9cm
+\end_inset
+
+Poste Supervision ==> IP correspondante : 10.X.0.6
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hspace{}
+\length 1.9cm
+\end_inset
+
+Plaque_1_automate_1 ==> IP correspondante : 10.X.1.5
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hspace{}
+\length 1.9cm
+\end_inset
+
+Plaque_1_automate_2 ==> IP correspondante : 10.X.1.6
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hspace{}
+\length 1.9cm
+\end_inset
+
+Plaque_2_automate_N ==> IP correspondante : 10.X.1.2*5+(N-1) = 10.X.1.10+(N-1).
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Au final nous aurons des équipements avec des noms ressemblant à celui-là
+ : lyon_aip_plaque_1_automate_1.
+\end_layout
+
+\begin_layout Standard
+L'adresse IP correspondante est : 10.0.1.5
+\end_layout
+
+\begin_layout Standard
+On a choisi, dans chaque site, de créer un VLAN qui regroupe que l'équipement
+ industriel (disons VLAN1) et un autre VLAN qui contient le reste du matériel
+ (serveurs, postes, etc.
+ - VLAN2).
+ Cette distinction est visible au niveau des adresses IP, au niveau du troisième
+ octet.
+ Ainsi, les adresses des équipements industriels sont sous la forme 10.X.1.X
+ tandis que les adresses des machines du VLAN2 son sous la forme 10.X.0.X.
+\end_layout
+
+\begin_layout Standard
+L'adresse du VLAN1 sera 10.X.1.0 tandis que celle du VLAN2 sera 10.X.0.0.
+ X diffère en fonction du site (0 pour AIP, 1 pour GE, 2 pour Roanne, etc.).
+\end_layout
+
+\begin_layout Standard
+Les adresses des automates sur des plaques seront calculés d'après la formule
+ suivante: 10.X.1.5*N°Plaque+(N°Automate-1).
+ On modifie donc le quatrième octet.
+ Par exemple, l'addresse de l'automate 3 situé sur la plaque 4 sur le site
+ AIP sera 10.0.1.22.
+\end_layout
+
+\begin_layout Standard
+Chaque site contient un routeur qui aura deux adresses différentes (une
+ pour VLAN1 et une dans VLAN2).
+ Dans VLAN1(équipement industriel) l'adresse est 10.X.1.1 et dans VLAN2 (équipement
+ normal) est 10.X.0.1.
+ Les routeurs utiliseront la méthode NAT pour la translation d'addresses.
+\end_layout
+
+\begin_layout Standard
+La méthode mise en place permet une facilité pour lire et surtout pour mettre
+ à jour en cas de déplacement d'une plaque : il suffit de mettre à jour
+ le lieu dans lequel elle se trouve dans son nom et de changer les octets
+ correspondants de l'adresse IP.
+\end_layout
+
+\begin_layout Standard
+Pour avoir une idée globale du plan d'adressage, l'Annexe 0 fournit le plan
+ complet, y inclut les masques des sous réseaux.
+\end_layout
+
+\begin_layout Standard
+En conclusion, les adresses dans le réseau seront de la forme 10.X.Y.Z où:
+\end_layout
+
+\begin_layout Itemize
+X est spécifique pour le site (0 pour AIP, 1 pour GE, 2 pour Roanne)
+\end_layout
+
+\begin_layout Itemize
+Y est spécifique au type d'appareil (1 pour industriel - VLAN1, 0 pour normal
+ - VLAN2)
+\end_layout
+
+\begin_layout Itemize
+Z est spécifique à un automate sur une palque (5*N°Plaque+(N°Automate-1))
+\end_layout
+
+\begin_layout Section
+Système d'administration
+\end_layout
+
+\begin_layout Subsection
+Comparaison des solutions logicielles
+\end_layout
+
+\begin_layout Standard
+
+\color red
+à mettre ici le contenu du fichier comparaison.doc
+\end_layout
+
+\begin_layout Subsection
+Manuel de dépannage
+\end_layout
+
+\begin_layout Subsubsection
+Procédure sans intervention d'un technicien
+\end_layout
+
+\begin_layout Standard
+Lorqu'une erreur ou anomalie est constatée, le personnel en charge de la
+ surveillance du réseau doit dans un premier temps se référer au manuel
+ de dépannage.
+ Ce manuel permet de guider l'utilisateur en fonction de ce qu'il constate
+ sur le terrain.
+ Une fois l'erreur identifier, il cherche dans le manuel les solutions proposées.
+ 
+\end_layout
+
+\begin_layout Standard
+Après avoir effectué les opérations proposées, si le problème est résolu,
+ il consigne l'erreur dans un journal ainsi que les manipulations effectuées
+ qui ont conduit à sa résolution.
+ 
+\end_layout
+
+\begin_layout Standard
+Si le problème n'est pas résolu, le manuel demande plus de détails à l'utilisate
+ur et notamment le résultat des manipulations effectuées.
+ Il propose alors à l'utilisateur de nouvelles manipulations plus ciblées.
+ Et ainsi de suite jusqu'à résolution du problème.
+\end_layout
+
+\begin_layout Standard
+Le manuel propose ainsi des actions de plus en plus ciblées à l'utilisateur
+ pour résoudre le problème.
+ Cependant, ces actions bien que ciblées sont simples et ne nécessite aucune
+ connaissance avancé en supervision de réseau.
+\end_layout
+
+\begin_layout Subsubsection
+Procédure avec intervention d'un technicien
+\end_layout
+
+\begin_layout Standard
+Si les manipulations du manuel ne suffisent pas, celui-ci invite l'utilisateur
+ à contacter un techicien.
+ Le manuel sauvegarde les manipulations effectuées par le superviseur et
+ ainsi le technicien à la possibilité de les connaître.
+ Ces informations lui permetront d'effectuer une intervention plus rapidement.
+\end_layout
+
+\begin_layout Standard
+Une fois l'intervention terminée, le technicien consigne l'erreur dans le
+ journal ainsi que les manipulations effectuées par le superviseur et par
+ lui même.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Annexes
+\end_layout
+
+\begin_layout Subsection
+Annexe 0 - Schéma architecture 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Annexe 1 - Gestion du DNS et du DHCP
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Annexe 2 - Proof of concept de la solution d'interconnexion
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Annexe 3 - Monitoring réseau
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Annexe 4 - Organisation de NAGIOS
+\end_layout
+
+\end_body
+\end_document

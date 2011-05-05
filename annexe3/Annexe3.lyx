@@ -1,4 +1,4 @@
-#LyX 1.6.8 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.9 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -89,7 +89,7 @@ height_special "totalheight"
 status open
 
 \begin_layout Title
-Titre
+Annexe 3
 \end_layout
 
 \end_inset
@@ -108,7 +108,7 @@ Auteurs:
 \begin_inset Newline newline
 \end_inset
 
-NOMS
+Soraya Belhadj Aissa, Jerome De Potter
 \end_layout
 
 \begin_layout Standard
@@ -816,513 +816,102 @@ Sujet de la modification
 \end_layout
 
 \begin_layout Section
-Solution pour le nommage et l'association des adresses IP
+Ipconfig
 \end_layout
 
 \begin_layout Subsection
-Gestion de la politique de nommage
-\end_layout
-
-\begin_layout Subsubsection
-Definition de la politique
+Machine Windows
 \end_layout
 
 \begin_layout Standard
-Les équipements du réseau se séparent en deux catégories :
-\end_layout
-
-\begin_layout Itemize
-les éléments des platines de manipulation ; 
-\end_layout
-
-\begin_layout Itemize
-les éléments servant à faire fonctionner le réseau ou offrant des services
- (serveurs, poste de supervision).
- 
+Machine Windows : 134.214.105.165 
 \end_layout
 
 \begin_layout Standard
-Afin de nous retrouver dans le réseau, nous mettons en place un serveur
- DNS qui permettra d’associer facilement des noms compréhensibles à des
- adresses IP.
- Tous les noms seront composés de différents champs composés de caractères
- alphanumériques et de tirets uniquement.
- Ces champs seront séparés par des « _ ».
- 
+Masque de sous réseau : 255.255.255.0 
 \end_layout
 
 \begin_layout Standard
-Le premier champ correspondra à l’identifiant du site d’exploitation.
- Ceci nous permettra de situer directement l’équipement.
-\end_layout
-
-\begin_layout Itemize
-Site central: lyon-aip
-\end_layout
-
-\begin_layout Itemize
-Site GE: lyon-ge
-\end_layout
-
-\begin_layout Itemize
-Site Roanne: roanne-iut
+Passerelle par défaut : 134.214.105.1
 \end_layout
 
 \begin_layout Standard
-Ensuite, s’il s’agit d’un équipement de platine, deux champs suivront :
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename ipconfigWin.bmp
+	width 15cm
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Itemize
-Un identifiant de la platine de manipulation, par exemple : bus-can, bus-modbus,
- etc.
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+ipconfig Machine Windows
 \end_layout
 
-\begin_layout Itemize
-• Un identifiant de l’équipement, composé de manière générique sous la forme
- «eqp-XX», où XX est un nombre commençant à 01, par exemple : eqp-01, eqp-02,
- etc.
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
-Ainsi, pour un équipement de platine, le nom DNS pourra ressembler à :
-\end_layout
+\end_inset
 
-\begin_layout Itemize
-roanne-iut_bus-can_eqp-01
-\end_layout
 
-\begin_layout Itemize
-lyon-aip_bus-modbus_eqp-05
-\end_layout
-
-\begin_layout Standard
-Si l’équipement est un élément servant à faire fonctionner le réseau, le
- deuxième champ contiendra un identifiant permettant de le désigner spécialement.
-\end_layout
-
-\begin_layout Itemize
-Serveurs DHCP & DNS:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-serv-dhcp-dns
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Serveurs vidéo:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-serv-video-XX (où XX est un numéro commençant à 01)
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Serveur HTTP:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-serv-http
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Poste de supervision:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-poste-supervision
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-Ainsi, pour un équipement de fonctionnement du réseau, le nom DNS pourra
- ressembler à:
-\end_layout
-
-\begin_layout Itemize
-lyon-aip_serv_http
-\end_layout
-
-\begin_layout Itemize
-lyon-ge_serv-dhcp-dns
-\end_layout
-
-\begin_layout Itemize
-roanne-iut_poste-supervision
 \end_layout
 
 \begin_layout Subsection
-Organisation du service de DNS multi-domaines
-\end_layout
-
-\begin_layout Subsubsection
-Organisation globale et integration dans les differents campus
+Serveur Nagios
 \end_layout
 
 \begin_layout Standard
-Afin de mettre en place la politique de nommage décrite ci-dessus, nous
- devons mettre en place des serveurs DNS.
- Pour assurer la meilleure fiabilité du système, nous avons un serveur DNS
- par site : Ainsi, même si la liaison entre les sites est défaillante, le
- système pourra fonctionner en local.
- 
+Serveur Nagios : 134.214.105.156 
 \end_layout
 
 \begin_layout Standard
-Les serveurs DNS (adresses IP 10.0.0.4, 10.1.0.4 et 10.2.0.4) seront placés sur chaque
- site, juste en-dessous du routeur principal du site (voir schéma global).
- Ce dernier sera configuré avec le DNS local en tant que DNS primaire et
- un DNS d’un autre site en secondaire.
- 
-\end_layout
-
-\begin_layout Subsubsection
-Organisation des DNS et configuration avec les differentes types d'enregistremen
-ts a gerer
+Masque de sous réseau : 255.255.255.0
 \end_layout
 
 \begin_layout Standard
-Lors de l’ajout d’un équipement sur le réseau, il faudra renseigner plusieurs
- configurations de la présence de ce nouvel élément.
- Notamment, il faudra faire l’association entre l’IP de l’équipement et
- son nom DNS.
- 
-\end_layout
-
-\begin_layout Standard
-Pour cela, nous imposons que les ajouts de configuration se fassent sur
- le serveur DNS du site principal.
- Ensuite, comme tous les serveurs devront être configurés à l’identique,
- un outil d’administration réseau devra permettre de copier facilement,
- voir automatiquement, le fichier de configuration d’un site à l’autre.
- 
-\end_layout
-
-\begin_layout Standard
-Au niveau du fichier de configuration même, on devra spécifier les enregistremen
-ts suivants pour chaque équipement:
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-A
-\series default
- – pour faire correspondre un nom d’hôte à une adresse IPv4.
-\end_layout
-
-\begin_layout Standard
-Comme on utilise l’adressage en IPv4, il est évident que ce type d’enregistremen
-t doit figurer dans un serveur terminal.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-PTR
-\series default
- – pour associer une adresse IP à un nom d’hôte (l’inverse du type A)
-\end_layout
-
-\begin_layout Standard
-Il nous faut ceci pour pouvoir trouver le nom d’hôte en donnant une adresse
- IP.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-NS
-\series default
- – définit les serveurs DNS du domaine.
-\end_layout
-
-\begin_layout Standard
-Nous avons 1 serveur DNS principal et des auxiliaires qu’il faut définir,
- donc forcément ce type d’enregistrement va figurer dans un serveur terminal.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-SOA
-\series default
- – donne les informations générales de la zone : serveur principal, etc.
-\end_layout
-
-\begin_layout Standard
-Pour avoir un résumé des informations générales, ce type d’enregistrement
- figurera aussi sur le serveur.
- Ainsi, en faisant une requête de ce type on pourra avoir des informations
- sur le serveur DNS principal, un courriel de contact, la durée d’expiration,
- etc.
-\end_layout
-
-\begin_layout Subsection
-Mise en place de l'infrastructure de DHCP
-\end_layout
-
-\begin_layout Subsubsection
-Gestion des configurations
-\end_layout
-
-\begin_layout Standard
-Il y aura un serveur DHCP par site.
- Ainsi, même en cas de rupture de liaison entre les sites, les équipements
- pourront fonctionner en local.
- Ces serveurs se trouveront sur les même machines que les serveurs DNS,
- directement sous le routeur principal de chaque site.
-\end_layout
-
-\begin_layout Standard
-Les serveurs DHCP seront configurés pour donner une adresse IP en fonction
- de l’adresse MAC de l’équipement : ils reconnaîtront l’équipement et lui
- donneront son adresse sur le site en question.
- Chaque serveur DHCP possède un fichier de configuration complet (de tout
- équipement de tout site).
-\end_layout
-
-\begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="6">
-<features>
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
 
 \begin_layout Plain Layout
-Site
+\noindent
+\align center
+\begin_inset Graphics
+	filename ifconfigNag.bmp
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+ifconfig Serveur Nagios
 \end_layout
 
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-Adresse Réseau
+
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Masque de sous-réseau
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Plage d'adresses IP
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Passerelle par défaut
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-IP du DNS
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-AIP
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10.0.0.0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-255.255.255.0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10.0.0.0/25
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10.0.0.1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10.0.0.4
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-GE
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10.1.0.0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-255.255.255.0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10.1.0.0/25
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10.1.0.1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10.1.0.4
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-ROanne
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10.2.0.0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-255.255.255.0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10.2.0.0/25
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10.2.0.1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10.2.0.4
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
 
 \end_inset
 
@@ -1330,125 +919,1115 @@ ROanne
 \end_layout
 
 \begin_layout Standard
-Le serveur DHCP peut détecter de quel sous-réseau vient la demande grâce
- au relais DHCP.
- Un agent de relais relaie les paquets DHCP sur le côté distant même s'ils
- sont des paquets de diffusion.
- Nous utiliserons donc un tel relais qui fera parti de toutes VLAN du site
- respectif et qui permet au serveur DHCP de gérer des portées différentes
- pour les sous-réseaux.
- 
-\end_layout
-
-\begin_layout Standard
-Afin de synchroniser les configurations des DHCP, qui sont identiques pour
- tous les serveurs DHCP, nous utiliserons les fonctionnalités d’un logiciel
- d’administration réseau décrit plus loin.
- Ainsi, nous n’aurons qu’à configurer le serveur DHCP du site principal
- pour que les autres serveurs soient à jour en quelques minutes seulement,
- sans intervention humaine.
- 
-\end_layout
-
-\begin_layout Subsubsection
-Gestion des adresses IP/MAC
-\end_layout
-
-\begin_layout Standard
-Afin de garantir un réseau cohérent, nous devons définir un plan d’adressage.
- Nous adoptons la politique suivante:
-\end_layout
-
-\begin_layout Itemize
-Un identifiant unique entre 10 et 254 sera affecté à chaque équipement :
- ce numéro sera utilisé en octet de poids faible dans l’adresse IP de l’équipeme
-nt.
-\end_layout
-
-\begin_layout Itemize
-Un identifiant pour identifier le site d’exploitation : ce numéro sera utilisé
- dans le troisième octet de l’adresse (voir adresses des sous-réseaux sur
- le schéma).
-\end_layout
-
-\begin_layout Standard
-Exemple: Un équipement avec une adresse MAC 00 :11 :22 :33 :44 :55 aura
- associé l’identifiant 150.
- Ensuite sur le sous réseau 10.0.0.0 il aura le serveur DHCP lui associera
- l’IP 10.0.0.150.
- Sur le sous-réseau 10.0.1.0 il recevra 10.0.1.150 ainsi de suite.
-\end_layout
-
-\begin_layout Standard
-Au premier branchement d’un équipement, un administrateur réseau choisira
- le numéro affecté à l’équipement.
- Il faudra alors mettre à jour la configuration des serveurs DHCP.
- Il suffira de mettre à jour celle du site principal et les autres serveurs
- se mettront à jour en quelques minutes seulement, sans intervention humaine,
- grâce aux fonctionnalités d’un logiciel d’administration réseau décrit
- plus loin, par réplication du fichier de configuration.
-\end_layout
-
-\begin_layout Standard
-Les adresses MAC peuvent être récupérées de manières différentes :
-\end_layout
-
-\begin_layout Itemize
-Si l’équipement réseau possède une étiquette de sa carte réseau, l’adresse
- MAC y en inscrit
-\end_layout
-
-\begin_layout Itemize
-Si l’équipement possède un écran et un système d’exploitation il est possible
- de récupérer son adresse MAC par le biais de la ligne de commande
-\end_layout
-
-\begin_layout Itemize
-Une dernière solution est de se connecter directement par câble réseau à
- l’équipement avec un ordinateur qui comporte un serveur DHCP et de faire
- une requête pour obtenir l’adresse MAC.
-\end_layout
-
-\begin_layout Subsection
-Procedure d' ajout de materiel
-\end_layout
-
-\begin_layout Standard
-Nous avons vu que notre architecture nécessitera que quelques interventions
- soient faites lors de l’ajout d’un nouveau matériel sur le réseau.
- 
-\end_layout
-
-\begin_layout Standard
-Pour récapituler, il faudra:
-\end_layout
-
-\begin_layout Itemize
-Récupérer l’adresse MAC de l’identifiant et y associer un identifiant entre
- 10 et 254
-\end_layout
-
-\begin_layout Itemize
-Ajouter les réservations d’IP associé à l’adresse MAC dans la configuration
- DHCP.
-\end_layout
-
-\begin_layout Itemize
-Ajouter les enregistrements DNS associant les noms DNS aux IP.
-\end_layout
-
-\begin_layout Itemize
-Au niveau des switches, configurer à quels VLAN appartient le nouvel équipement
- (sur chaque switch)
-\end_layout
-
-\begin_layout Standard
-Les configurations DNS et DHCP se répliqueront automatiquement sur tous
- les serveurs grâce aux outils d’administration mis en place.
+On constate que les deux machines sont sur le même sous-réseau.
 \end_layout
 
 \begin_layout Section
-Conclusion
+Netstat
+\end_layout
+
+\begin_layout Subsection
+Machine Windows
+\end_layout
+
+\begin_layout Subsubsection*
+Netstat
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename netstatWin.bmp
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+netstat
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A chaque ligne correspond une connexion réseau établie entre la machine
+ windows locale et une machine distante.
+\end_layout
+
+\begin_layout Standard
+Les colonnes sont les suivantes : 
+\end_layout
+
+\begin_layout Description
+Proto : Indique le protocole de communication utilisé.
+ Celui-ci peut être : TCP, UDP, TCPv6 et UDPv6.
+\end_layout
+
+\begin_layout Description
+Adresse 
+\series bold
+locale
+\series default
+ : Indique le nom ou l'adresse IP de la machine sur laquelle netstat est
+ exécutée ainsi que le port de sortie de la connexion.
+\end_layout
+
+\begin_layout Description
+Adresse distante : Indique le nom ou l'adresse IP de la machine distante
+ avec laquelle la connexion est établie ainsi que le port d'entrée de la
+ connexion.
+\end_layout
+
+\begin_layout Description
+Etat : Indique l'état de la connexion.
+ Celui-ci peut être :
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+LISTENING -> En écoute
+\end_layout
+
+\begin_layout Itemize
+ESTABLISHED -> Etablie
+\end_layout
+
+\begin_layout Itemize
+TIME_WAIT -> En attente
+\end_layout
+
+\begin_layout Itemize
+CLOSE_WAIT -> En attente de fermeture
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Ici, on peut voir différentes connexions : 
+\end_layout
+
+\begin_layout Itemize
+Les quatre premières connexion sont établies entre if213-06 et la machine
+ locale 
+\end_layout
+
+\begin_layout Itemize
+La cinquième est en attente de fermeture entre if213-06 et la machine locale
+ 
+\end_layout
+
+\begin_layout Itemize
+Les sixième et septièmes connexions sont établies avec insa-lyon.fr pour
+ l'accès à servif-baie et home 
+\end_layout
+
+\begin_layout Itemize
+Trois connexions sont établies et une est en attente avec le serveur nagios
+ 
+\end_layout
+
+\begin_layout Itemize
+Les autres lignes correspondent à des connexions à des machines distantes
+ en utilisant les protocoles http et https.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Netstat -a
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename netstataWin.bmp
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+netstat -a
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La commande netstat -a présente en plus des connexions de netstat, les connexion
+s qui sont en écoute.
+ Les connexions dont l'adresse distante est *:* sont en écoute sur le port
+ de l'adresse locale.
+\end_layout
+
+\begin_layout Subsection*
+Netstat -e
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename netstateWin.bmp
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+netstat -e
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La commande netstat -e présente les informations concernant l'ensemble des
+ connexions.
+ On obtient ainsi le nombre d'octets, de paquets unicast et de paquets non
+ monodiffusion reçus et émis.
+ On peut également connaître le nombre de rejets ou d'erreurs.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Netstat -r
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename netstatrWin.bmp
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+netstat -r
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La commande netstat -r présente la table de routage ainsi que les itinéraires
+ actifs.
+ Pour chaque destination, est renseigné, son masque de sous réseau, l'adresse
+ de sa passerelle, l'adresse de son interface et sa métrique.
+ Certaines adresses sont remarquables : 
+\end_layout
+
+\begin_layout Standard
+127.0.0.0 -> Adresse de Loopback 
+\end_layout
+
+\begin_layout Standard
+134.214.105.165 -> Adresse de la machine Windows 
+\end_layout
+
+\begin_layout Standard
+134.214.255.255 -> Adresse de broadcast 
+\end_layout
+
+\begin_layout Standard
+192.168.0.1 -> Adresse de réseau privé
+\end_layout
+
+\begin_layout Subsubsection*
+Netstat -n
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename netstatnWin.bmp
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+netstat -n
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La commande netstat -n présente les connexions actives.
+ A la différence de netstat, cette commande ne présente jamais les noms
+ de la machine locale et des machines distantes mais uniquement les adresse
+ IP.
+ Les connexions LISTENING ne sont pas présente dans cette liste puisque
+ n'étant pas actives.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Netstat -p TCP
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename NetstatPTcp.bmp
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+netstat -p tcp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename NetstatP.bmp
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+netstat -p udp , -p ip, -p icmp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La commande netstat -p présente les connexions active pour le protocole
+ précisé.
+ On remarque ici qu'il n'y a que des connexions TCP.
+\end_layout
+
+\begin_layout Subsubsection*
+Netstat -s
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename netstatsWin.bmp
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+netstat -s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La commande netstat -s pésente les statistiques de toutes les connexions
+ par protocole.
+ 
+\end_layout
+
+\begin_layout Subsection
+Serveur nagios
+\end_layout
+
+\begin_layout Subsubsection*
+Netstat
+\end_layout
+
+\begin_layout Standard
+On éxécute les mêmes commandes sur le serveur nagios.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Nagios/NagiosNetstat.bmp
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+netstat
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Netstat -a
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Nagios/NagiosNetstatA.bmp
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+netstat -a
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Netstat -e
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Nagios/NagiosNetstatE.bmp
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+netstat -e
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Netstat -r
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Nagios/NagiosNetstatR.bmp
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+netstat -r
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Netstat -n
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename NagiosNetstatN.bmp
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+netstat -n
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Netstat -p
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename NagiosNetstatP.bmp
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+netstat -p
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Netstat -s
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Nagios/NagiosNetstatS.bmp
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+netstat -s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ping
+\end_layout
+
+\begin_layout Standard
+La commande ping permet de savoir si une machine ou un serveur est accessible
+ depuis une autre (machine sur laquelle est exécuter la commande).
+ Cette commande envoie un 
+\begin_inset Quotes eld
+\end_inset
+
+ping
+\begin_inset Quotes erd
+\end_inset
+
+ à la machine distante et attend une réponse.
+ Si la machine n'est pas accessible, la commande se terminera pas un échec
+ suite à un timeout.
+ L'exécution de la commande ping affiche le temps de réponse de la machine
+ distante.
+ Si la commande affiche un temps de réponse très long, c'est qu'il est possible
+ qu'il y est un problème sur le réseau.
+\end_layout
+
+\begin_layout Standard
+A compléter avec les images
+\end_layout
+
+\begin_layout Section
+Sniffer de paquet : Wireshark
+\end_layout
+
+\begin_layout Standard
+Le logiciel Wireshark permet d'analyser les trames circulant sur un réseau.
+ L'analyse de la requête ping permet de connaitre la composition de la trame.
+ Celle-ci fait 74 octets est composé d'un entête ethernet, d'un entête ip,
+ d'un entête icmp et de données.
+ L'entête ethernet présente les adresses MAC de source et de destination
+ de la trame et indique que le protocole ip est utilisé pour la couche supèrieur.
+ L'entête ip présente la version (ipv4), sa taille (20 octets), l'utilisation
+ du protocole de controle ICMP et checksum et les adresses ip de source
+ et de destination du paquet.
+ L'entête ICMP contient des controles de validité du paquet.
+ La donnée est écrite sur 32 octets.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename PingSwitchDetails.bmp
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Analyse de trame
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ajouter image reply!
+\end_layout
+
+\begin_layout Section
+MIB
+\end_layout
+
+\begin_layout Standard
+MIB est une base de données regroupant les informations concernant le métériel
+ sur lequel elle est installée.
+ Ces informations sont utiles pour gérer un réseau.
+ L'accès à la MIB se fait à l'aide du protocole snmp.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Nagios/NagiosSnmpTranslate.bmp
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+MIB
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Nagios/NagiosSnmpGet.bmp
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+snmpget
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On constate que le serveur snmp est lancé depuis un peu plus de 7 jours.
+ L'upTime permet de savoir s'il y a des coupures de courant.
+\end_layout
+
+\begin_layout Section
+Traceroute
+\end_layout
+
+\begin_layout Standard
+Principe de fonctionnement : Traceroute envoie des paquets UDP avec un paramètre
+ TTL (Time To Live) de plus en plus grand.
+ Lorsq'un routeur récupère un paquet ip, il décrémente TTL et retransmet
+ le paquet.
+ Lorque le TTL atteint 0, un paquet ICMP d'erreur Time To Live exceeded
+ et envoyé par le routeur à la source.
+ Les routeurs sont ainsi découvert de proche en proche.
+ Lorsque la destination est atteinte par un paquet, la source ne recoit
+ plus de paquet ICMP d'erreur mais un paquet ICMP Port Unreachable ayant
+ pour adresse source, l'adresse de l'élément sondé.
+\end_layout
+
+\begin_layout Standard
+La commande Traceroute permet ainsi de savoir par où passe les paquets à
+ destination d'une machine distante.
+ Cependant, traceroute ne montre que le chemin allant de la source à la
+ destination.
+ En effet, le chemin de retour peut être différent.
+ Afin de déterminer la topologie du réseau, il convient donc de faire un
+ traceroute depuis la machine Windows vers Iftpserv2 puis depuis Iftpserv2
+ vers la machine Windows.
+\end_layout
+
+\begin_layout Standard
+A noter que l'identification de la topologie peut ne pas être complète puisque
+ certains routeurs peuvent ne pas répondre aux requête ICMP.
+\end_layout
+
+\begin_layout Subsection
+Windows – Iftpserv2 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename tracewiniftp.bmp
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+tracert Iftpserv2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Iftpserv2 – Windows
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename traceiftpwin.bmp
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+traceroute 134.214.105.165
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Topologie du réseau
+\end_layout
+
+\begin_layout Standard
+Les deux traceroutes nous permettent de déduire la topologie du réseau.
+ La machine Windows et iftpserv2 sont interconnecté par l'intermédiaire
+ du routeur ifswitch01.insa-lyon.fr.
+ Celui ci à au moins deux interfaces : 134.214.104.1 et 134.214.105.1.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename topologie.png
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Topologie du reseau
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
