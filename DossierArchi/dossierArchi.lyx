@@ -1,4 +1,4 @@
-#LyX 1.6.8 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -108,7 +108,8 @@ Auteurs:
 \begin_inset Newline newline
 \end_inset
 
-Monica Golumbeanu, Billy Pitiot, Leandro Resente Mattioli
+Monica Golumbeanu, Billy Pitiot, Leandro Resende Mattioli, Stefana Gartu,
+ Soraya Belhadj Aissa, Jérôme de potter
 \end_layout
 
 \begin_layout Standard
@@ -444,12 +445,12 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-Le document présent constitue la répose donnée par notre équipe de consultants
+Le document présent constitue la réponse donnée par notre équipe de consultants
  à la demande de restructuration de l'architecture réseau de AIPRAO.
- Le dossier est structuré dans deux parties.
- La première partie constitue un rapport décisionnel addrésé à la Direction
- de l'AIP fournissant l'information nécessaire à sa décision de lancer le
- projet.
+ Le dossier est structuré en deux parties.
+ La première partie constitue un rapport décisionnel addressé à la Direction
+ de l'AIP fournissant les informations nécessaires à sa décision de lancer
+ le projet.
  La deuxième partie décrit une solution appropriée en proposant des prototypes
  réalisés en réponse aux différentes facettes du cahier des charges.
  Les annexes contiennent des éléments technologiques et organisationnels
@@ -462,8 +463,8 @@ Objectifs principaux pour la nouvelle architecture
 \end_layout
 
 \begin_layout Standard
-La Direction de AIPRAO a donné un cadrage définissant les objectifs pour
- l'évolution de l'infrastructure:
+La Direction de AIPRAO a donné un cadre définissant les objectifs pour l'évoluti
+on de l'infrastructure:
 \end_layout
 
 \begin_layout Enumerate
@@ -473,8 +474,8 @@ L'architecture doit favoriser les regroupements de moyens
 \begin_deeper
 \begin_layout Standard
 La Direction souhaite pouvoir mutualiser l'exploitation des systèmes industriels
- - le site central ou un autre site puisse héberger (d'une manière temporaire
- ou non) les ressources allouées usuellement à d'autres entités.
+ - le site central ou un autre site doit pouvoir héberger (d'une manière
+ temporaire ou non) les ressources allouées usuellement à d'autres entités.
  Ainsi, une platforme industrielle virtuelle sera répartie entre des postes
  physiquement éloignées.
  L'objectif est la minimisation des transports pour les usagers.
@@ -483,7 +484,7 @@ La Direction souhaite pouvoir mutualiser l'exploitation des systèmes industriel
 \end_deeper
 \begin_layout Enumerate
 L'architecture doit permettre aux entités de bénéficier de services communs
- pour travailler à distance
+ pour travailler à distance.
 \end_layout
 
 \begin_deeper
@@ -533,7 +534,7 @@ Securité
 
 \begin_deeper
 \begin_layout Standard
-La surveillance du système entier doit être possible.
+La surveillance de tout le système doit être possible.
  Par conséquent, un système d'administration doit être mis en place.
 \end_layout
 
@@ -545,7 +546,7 @@ Organisation de l'architecture
 \begin_layout Standard
 Les parties qui suivent contiennent la proposition d'architecture qui répond
  aux demandes du client.
- Toutes les choix sont argumentées.
+ Tous les choix sont argumentés.
 \end_layout
 
 \begin_layout Subsection
@@ -593,8 +594,8 @@ Organisation du réseau sur trois sites
 \end_layout
 
 \begin_layout Standard
-La liaison entre les différentes sites est réalisée par des tunnels VPN
- qui offre un accès sécurisé ainsi qu'un service d'authentification efficace
+La liaison entre les différents sites est réalisée par des tunnels VPN qui
+ offrent un accès sécurisé ainsi qu'un service d'authentification efficace
  pour les différents utilisateurs accédant aux plateformes industrielles
  (voir Figure 2).
 \end_layout
@@ -649,8 +650,8 @@ Un utilisateur externe (étudiant, professeur, etc.) pourra se connecter à
 
 \begin_layout Standard
 Dans chaque site deux VLANs ont été mis en place.
- Un contient que le matériel industriel (les plaques avec les automates)
- et l'autre contient le reste.
+ Le premier ne contient que le matériel industriel (les plaques avec les
+ automates) et l'autre contient le reste.
  La configuration realisée permet de mettre en place plusieurs VLANs si
  on désire.
  
@@ -666,7 +667,7 @@ Le fait d'avoir reservé un VLAN spécialement pour l'équipement industriel
 \begin_layout Standard
 Chaque site possède un serveur DHCP et un serveur DNS.
  Le serveur DHCP s'occupera d'associer des adresses IP en utilisant des
- DHCP relais entre les différentes réseaux tandis que le serveur DNS géra
+ DHCP relais entre les différents réseaux tandis que le serveur DNS gérera
  le nommage.
  Les politiques de nommage et d'addressage seront détaillées dans les sections
  qui suivent.
@@ -694,10 +695,10 @@ L'architecture doit favoriser les regroupements de moyens
 \begin_layout Standard
 Ceci est possible grâce à l'architecture VLAN proposée.
  Supposant qu'on veut mettre ensemble deux équipements physiquement éloignés,
- cela est possible en les mettant dans le même VLAN et donc dans le même
- sous réseau.
+ c'est possible en les mettant dans le même VLAN et donc dans le même sous
+ réseau.
  Cette opération est possible via une interface web et ne nécessite pas
- des actions physiques (branchêment, débranchement, ect.).
+ d'actions physiques (branchement, débranchement, etc.).
 \end_layout
 
 \end_deeper
@@ -708,9 +709,9 @@ L'architecture doit permettre aux entités de bénéficier de services communs
 
 \begin_deeper
 \begin_layout Standard
-Comme chaque platforme intègre un serveur HTTP, il sera possible de se connecter
- de n'importe quelle poste possedant accès Internet par l'intérmediaire
- d'un navigateur web sur un des sites (AIP, GE, Roanne, ...).
+Comme chaque plateforme intègre un serveur HTTP, il sera possible de se
+ connecter de n'importe quelle poste possedant accès Internet par l'intérmediair
+e d'un navigateur web sur un des sites (AIP, GE, Roanne, ...).
  L'accès aux plaques industrielles sera donc assuré via une interface web.
  
 \begin_inset Newline newline
@@ -785,7 +786,7 @@ Routeurs Firewall VPN
 \end_layout
 
 \begin_layout Standard
-Ces elements sont destiner à transporter les messages à l'intérieur des
+Ces elements sont destinés à transporter les messages à l'intérieur des
  sous-réseaux.
  Comme une règle de base de sécurité, on utilise des firewalls pour mieux
  protéger ces réseaux.
@@ -797,7 +798,7 @@ De plus, le réseaux virtuel permet d'avoir un réseau logique qui intègre
 \end_layout
 
 \begin_layout Standard
-Le router choisi est le 
+Le routeur choisi est le 
 \emph on
 VPN S@N 2000
 \emph default
@@ -818,7 +819,7 @@ Firewall
 
 \begin_deeper
 \begin_layout Itemize
-bloquer toutes les requês venus de l'exterieur
+bloquer toutes les requêtes venant de l'exterieur
 \end_layout
 
 \begin_layout Itemize
@@ -849,7 +850,7 @@ VPN
 
 \begin_deeper
 \begin_layout Itemize
-la connexion est effectuée par l'adresse IP du router du campus et le port
+la connexion est effectuée par l'adresse IP du routeur du campus et le port
  associé à cette redirection
 \end_layout
 
@@ -870,8 +871,7 @@ Du au plan de nommage effectué voir section YY, la juxtaposition des 3 réseaux
 \end_layout
 
 \begin_layout Itemize
-permettre les connexions depuis un client VPN (possibiliter alors l'accès
- distant).
+permettre les connexions depuis un client VPN (rendre possible l'accès distant).
 \end_layout
 
 \end_deeper
@@ -884,7 +884,7 @@ Les switches seront utilisés pour:
 \end_layout
 
 \begin_layout Itemize
-interconnecter les elements d'une certaine plaque
+interconnecter les élements d'une certaine plaque
 \end_layout
 
 \begin_layout Itemize
@@ -944,8 +944,8 @@ Serveurs DHCP, DNS et HTTP
 
 \begin_layout Standard
 Des serveurs DHCP et DNS dédiés seront mises en place.
- Ses objectifs, sont, respectivement, l'adressage dynamique (et alors une
- configuration plus simple) et l'attribution de noms aux machines.
+ Leurs objectifs, sont, respectivement, l'adressage dynamique (et alors
+ une configuration plus simple) et l'attribution de noms aux machines.
  
 \end_layout
 
@@ -960,7 +960,7 @@ Le serveur HTTP devra fournir une interface Web pour la surveillance des
 \end_layout
 
 \begin_layout Standard
-Pour économizer les couts avec des logiciels, on propose d'utiliser le système
+Pour économiser les coûts avec des logiciels, on propose d'utiliser le système
  d'exploitation orienté serveur 
 \emph on
 Ubuntu Server
@@ -1050,7 +1050,7 @@ Pour tous les serveurs:
 \series bold
 openssh-server:
 \series default
- Pour permettre l'acces à distance et configuration remote des serveurs.
+ Pour permettre l'accès et la configuration à distance des serveurs.
 \end_layout
 
 \end_deeper
@@ -1060,7 +1060,7 @@ Gestion du nommage et de l'adressage
 
 \begin_layout Standard
 Le nommage des machines est indispensable pour une lecture facile par l'œil
- humain et surtout pouur une mémorisation et une utilisation plus intuitive
+ humain et surtout pour une mémorisation et une utilisation plus intuitive
  qu'une adresse IP.
  Nous avons donc choisi une politique de nommage qui uniformisera la méthode
  de nommage des différentes machines sur le réseau.
@@ -1175,7 +1175,7 @@ L'adresse IP correspondante est : 10.0.1.5
 \end_layout
 
 \begin_layout Standard
-On a choisi, dans chaque site, de créer un VLAN qui regroupe que l'équipement
+On a choisi, dans chaque site, de créer un VLAN qui ne regroupe que l'équipement
  industriel (disons VLAN1) et un autre VLAN qui contient le reste du matériel
  (serveurs, postes, etc.
  - VLAN2).
@@ -1207,7 +1207,7 @@ Chaque site contient un routeur qui aura deux adresses différentes (une
 \end_layout
 
 \begin_layout Standard
-La méthode mise en place permet une facilité pour lire et surtout pour mettre
+La méthode mise en place permet une facilité de lecture et surtout de mise
  à jour en cas de déplacement d'une plaque : il suffit de mettre à jour
  le lieu dans lequel elle se trouve dans son nom et de changer les octets
  correspondants de l'adresse IP.
@@ -1244,9 +1244,611 @@ Comparaison des solutions logicielles
 \end_layout
 
 \begin_layout Standard
+Identification des critères de comparaison : Nous avons choisi une liste
+ de critères qui serviront à déterminer notre choix entre les deux solutions
+ logicielles Nagios couplé à MRTG et HiVison de Hirschmann et nous avons
+ effectué un tableau comparatif entre ces deux solutions.
+ Voici donc nos critères de comparaison :
+\end_layout
 
-\color red
-à mettre ici le contenu du fichier comparaison.doc
+\begin_layout Itemize
+L’investissement initial (coût d’achat et coût d’installation)
+\end_layout
+
+\begin_layout Itemize
+Coût en phase de production
+\end_layout
+
+\begin_layout Itemize
+Critères techniques et performances
+\end_layout
+
+\begin_layout Itemize
+Gestion des problèmes
+\end_layout
+
+\begin_layout Itemize
+Statistiques
+\end_layout
+
+\begin_layout Itemize
+Le confort d’utilisation et accessibilité
+\end_layout
+
+\begin_layout Itemize
+Documentation et support
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="3">
+<features>
+<column alignment="center" valignment="top" width="9cm">
+<column alignment="center" valignment="top" width="5cm">
+<column alignment="center" valignment="top" width="3cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Critères
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nagios/MRTG
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hirschmann/HiVision
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Investissement initial
+\end_layout
+
+\begin_layout Plain Layout
+Coût d'achat
+\end_layout
+
+\begin_layout Plain Layout
+Coût d'installation et de configuration initiale
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Gratuit
+\end_layout
+
+\begin_layout Plain Layout
+élevé
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+10 000 euros
+\end_layout
+
+\begin_layout Plain Layout
+faible
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Coût en phase de production
+\end_layout
+
+\begin_layout Plain Layout
+Coût de la licence par an
+\end_layout
+
+\begin_layout Plain Layout
+Nombre de personnes à monopoliser pendant les heures d'exploitation et compétenc
+es
+\end_layout
+
+\begin_layout Plain Layout
+Nombre de personnes à monopoliser pendant les heures d'inexploitation et
+ compétences 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Gratuite
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Critères techniques et performances
+\end_layout
+
+\begin_layout Plain Layout
+plugins existants
+\end_layout
+
+\begin_layout Plain Layout
+possibilité et coût d'ajout de plugins
+\end_layout
+
+\begin_layout Plain Layout
+logique d'interconnexion
+\end_layout
+
+\begin_layout Plain Layout
+liens entre équipements
+\end_layout
+
+\begin_layout Plain Layout
+Accord en partenariat avec des entreprises
+\end_layout
+
+\begin_layout Plain Layout
+Gestion des MIB
+\end_layout
+
+\begin_layout Plain Layout
+Scan réseau par critères
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Oui
+\end_layout
+
+\begin_layout Plain Layout
+Coût de développement
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Non
+\end_layout
+
+\begin_layout Plain Layout
+Non
+\end_layout
+
+\begin_layout Plain Layout
+Non
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Oui
+\end_layout
+
+\begin_layout Plain Layout
+Coût d’achat
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Oui
+\end_layout
+
+\begin_layout Plain Layout
+Oui
+\end_layout
+
+\begin_layout Plain Layout
+Oui
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Gestion de problèmes
+\end_layout
+
+\begin_layout Plain Layout
+Existence d'alertes
+\end_layout
+
+\begin_layout Plain Layout
+pilotage d'alertes par escalade
+\end_layout
+
+\begin_layout Plain Layout
+gestion d'erreurs par niveau
+\end_layout
+
+\begin_layout Plain Layout
+assistance dans la gestion des erreurs
+\end_layout
+
+\begin_layout Plain Layout
+gestion d'erreurs en définissant les liens entre les différents composants
+ réseaux
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Oui
+\end_layout
+
+\begin_layout Plain Layout
+Non 
+\end_layout
+
+\begin_layout Plain Layout
+Non
+\end_layout
+
+\begin_layout Plain Layout
+Non
+\end_layout
+
+\begin_layout Plain Layout
+Non
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Oui
+\end_layout
+
+\begin_layout Plain Layout
+Oui 
+\end_layout
+
+\begin_layout Plain Layout
+Oui
+\end_layout
+
+\begin_layout Plain Layout
+Oui
+\end_layout
+
+\begin_layout Plain Layout
+Oui
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Statistiques
+\end_layout
+
+\begin_layout Plain Layout
+statistiques d'erreurs
+\end_layout
+
+\begin_layout Plain Layout
+statistiques de traffic
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Oui
+\end_layout
+
+\begin_layout Plain Layout
+Oui
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Oui
+\end_layout
+
+\begin_layout Plain Layout
+Oui
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Confort d'utilisation et accessibilité
+\end_layout
+
+\begin_layout Plain Layout
+monitoring à distance
+\end_layout
+
+\begin_layout Plain Layout
+monitoring par ligne téléphonique
+\end_layout
+
+\begin_layout Plain Layout
+monopolisation d'une ressource humaine 24h/24
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Oui
+\end_layout
+
+\begin_layout Plain Layout
+Oui
+\end_layout
+
+\begin_layout Plain Layout
+Non
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Oui 
+\end_layout
+
+\begin_layout Plain Layout
+Oui
+\end_layout
+
+\begin_layout Plain Layout
+Non
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Documentation et support
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Faible
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bonne
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Etant donné que Nagios/MRTG est une solution open source, elle présente
+ entre autres les défauts de n’importe quelle solution similaire.
+ La solution n’est pas très bien documentée.
+ Elle favorise la performance à l’utilisation et la commercialisation et
+ donc au confort et à l’accessibilité.
+ N’ayant pas de périmètre de fonctionnalités bien défini, nous ne pouvons
+ pas juger de l’application de ces fonctionnalités dès le départ et il nous
+ faudra donc une solution assez évolutive dans un temps court.
+ Ceci n’est pas possible avec la première solution car une solution qui
+ est non disponible doit être développée par nous étant limité en temps
+ et en argent.
+ Nagios nous présente une interface web assez simple, très riche en informations
+ que nous pensons est adéquate dans notre cas d’utilisation de supervision
+ d’une configuration relativement inchangée.
+ Par contre cette interface ne nous permet pas de surmonter la configuration
+ compliquée à la mise en œuvre du système d’administration ainsi qu’aux
+ changements dans la topologie du réseau.
+ Nous choisirons donc la solution payante HiVision-Hirschmann en vue de
+ sa notoriété sur le marché.
 \end_layout
 
 \begin_layout Subsection
@@ -1263,7 +1865,7 @@ Lorqu'une erreur ou anomalie est constatée, le personnel en charge de la
  de dépannage.
  Ce manuel permet de guider l'utilisateur en fonction de ce qu'il constate
  sur le terrain.
- Une fois l'erreur identifier, il cherche dans le manuel les solutions proposées.
+ Une fois l'erreur identifiée, il cherche dans le manuel les solutions proposées.
  
 \end_layout
 
@@ -1285,7 +1887,7 @@ ur et notamment le résultat des manipulations effectuées.
 Le manuel propose ainsi des actions de plus en plus ciblées à l'utilisateur
  pour résoudre le problème.
  Cependant, ces actions bien que ciblées sont simples et ne nécessite aucune
- connaissance avancé en supervision de réseau.
+ connaissance avancée en supervision de réseau.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1297,7 +1899,7 @@ Si les manipulations du manuel ne suffisent pas, celui-ci invite l'utilisateur
  à contacter un techicien.
  Le manuel sauvegarde les manipulations effectuées par le superviseur et
  ainsi le technicien à la possibilité de les connaître.
- Ces informations lui permetront d'effectuer une intervention plus rapidement.
+ Ces informations lui permettront d'effectuer une intervention plus rapidement.
 \end_layout
 
 \begin_layout Standard
