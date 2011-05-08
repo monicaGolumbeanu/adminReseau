@@ -1,4 +1,4 @@
-#LyX 1.6.9 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -845,7 +845,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename ipconfigWin.bmp
+	filename images/ipconfigWin.bmp
 	width 15cm
 
 \end_inset
@@ -893,7 +893,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename ifconfigNag.bmp
+	filename images/ifconfigNag.bmp
 	width 15cm
 
 \end_inset
@@ -945,7 +945,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename netstatWin.bmp
+	filename images/netstatWin.bmp
 	width 15cm
 
 \end_inset
@@ -1067,7 +1067,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename netstataWin.bmp
+	filename images/netstataWin.bmp
 	width 15cm
 
 \end_inset
@@ -1114,7 +1114,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename netstateWin.bmp
+	filename images/netstateWin.bmp
 	width 10cm
 
 \end_inset
@@ -1163,7 +1163,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename netstatrWin.bmp
+	filename images/netstatrWin.bmp
 	width 15cm
 
 \end_inset
@@ -1227,7 +1227,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename netstatnWin.bmp
+	filename images/netstatnWin.bmp
 	width 15cm
 
 \end_inset
@@ -1276,7 +1276,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename NetstatPTcp.bmp
+	filename images/NetstatPTcp.bmp
 	width 12cm
 
 \end_inset
@@ -1311,7 +1311,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename NetstatP.bmp
+	filename images/NetstatP.bmp
 	width 15cm
 
 \end_inset
@@ -1361,7 +1361,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename netstatsWin.bmp
+	filename images/netstatsWin.bmp
 	width 12cm
 
 \end_inset
@@ -1415,7 +1415,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename Nagios/NagiosNetstat.bmp
+	filename images/NagiosNetstat.bmp
 	width 15cm
 
 \end_inset
@@ -1746,7 +1746,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename PingSwitchDetails.bmp
+	filename images/PingSwitchDetails.bmp
 	width 15cm
 
 \end_inset
@@ -1911,7 +1911,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename tracewiniftp.bmp
+	filename images/tracewiniftp.bmp
 	width 10cm
 
 \end_inset
@@ -1955,7 +1955,7 @@ status open
 \noindent
 \align center
 \begin_inset Graphics
-	filename traceiftpwin.bmp
+	filename images/traceiftpwin.bmp
 	width 10cm
 
 \end_inset

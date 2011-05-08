@@ -1390,16 +1390,6 @@ Coût en phase de production
 Coût de la licence par an
 \end_layout
 
-\begin_layout Plain Layout
-Nombre de personnes à monopoliser pendant les heures d'exploitation et compétenc
-es
-\end_layout
-
-\begin_layout Plain Layout
-Nombre de personnes à monopoliser pendant les heures d'inexploitation et
- compétences 
-\end_layout
-
 \end_inset
 </cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
@@ -1447,14 +1437,6 @@ possibilité et coût d'ajout de plugins
 \end_layout
 
 \begin_layout Plain Layout
-logique d'interconnexion
-\end_layout
-
-\begin_layout Plain Layout
-liens entre équipements
-\end_layout
-
-\begin_layout Plain Layout
 Accord en partenariat avec des entreprises
 \end_layout
 
@@ -1487,20 +1469,6 @@ Coût de développement
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset space \space{}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset space \space{}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 Non
 \end_layout
 
@@ -1530,20 +1498,6 @@ Oui
 
 \begin_layout Plain Layout
 Coût d’achat
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset space \space{}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset space \space{}
-\end_inset
-
-
 \end_layout
 
 \begin_layout Plain Layout
@@ -1924,6 +1878,18 @@ Annexe 0 - Schéma architecture
 \end_layout
 
 \begin_layout Standard
+\begin_inset Graphics
+	filename archi.png
+	lyxscale 20
+	scale 55
+	rotateAngle 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -1932,6 +1898,730 @@ Annexe 0 - Schéma architecture
 
 \begin_layout Subsection
 Annexe 1 - Gestion du DNS et du DHCP
+\end_layout
+
+\begin_layout Subsubsection
+Configurations possibles
+\end_layout
+
+\begin_layout Standard
+Les paramètres obtenus pour la commande 
+\begin_inset listings
+lstparams "basicstyle={\ttfamily}"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+set all
+\end_layout
+
+\end_inset
+
+ sont présentés dans la figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cmd_set_all"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe1/img/nslookup_linux.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe1/img/nslookup_windows.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cmd_set_all"
+
+\end_inset
+
+ Commande 
+\begin_inset listings
+lstparams "basicstyle={\ttfamily}"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+set all
+\end_layout
+
+\end_inset
+
+ de 
+\noun on
+nslookup
+\noun default
+ dans les environnements 
+\noun on
+Windows
+\noun default
+ et 
+\noun on
+GNU/Linux
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Une description succinte de quelques paramètres est donnée ci-dessous :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box ovalbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Description
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+root Serveur pour la racine du domaine (
+\emph on
+A.ROOT-SERVERS.NET
+\emph default
+).
+\end_layout
+
+\begin_layout Description
+domain Domaine de nom concerné (
+\emph on
+insa-lyon.fr
+\emph default
+).
+\end_layout
+
+\begin_layout Description
+port Port utilisé pour le serveur de domaine (53).
+\end_layout
+
+\begin_layout Description
+type Type de la requête DNS (
+\emph on
+type A
+\emph default
+).
+\end_layout
+
+\begin_layout Description
+retry Nombre de tentatives de la requête (
+\emph on
+une seul tentative
+\emph default
+).
+\end_layout
+
+\begin_layout Description
+timeout Durée d'une requête avant son expiration (
+\emph on
+2 secondes
+\emph default
+).
+\end_layout
+
+\begin_layout Description
+class Code de la classe de l'enregistrement DNS (
+\emph on
+IN -- Internet
+\emph default
+).
+\end_layout
+
+\begin_layout Description
+defname Ajouter le nom du domaine par défaut à des requêtes simples (qui
+ ne contiennent pas de période).
+\end_layout
+
+\begin_layout Description
+recurse Demander à autres serveurs si on n'a pas l'information.
+\end_layout
+
+\begin_layout Description
+srchlist Liste des domaines utilisés par le paramètre 
+\emph on
+search
+\emph default
+.
+ Le domaine défini par une commande 
+\begin_inset listings
+lstparams "basicstyle={\ttfamily}"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+set domain
+\end_layout
+
+\end_inset
+
+ sera remplacé par le premier item de la liste.
+ (
+\emph on
+insa-lyon.fr
+\emph default
+).
+\end_layout
+
+\begin_layout Description
+search Cette option ajoute les domaines stockés par le paramètre 
+\emph on
+srchlist
+\emph default
+ à la requête jusqu'à réception d'une réponse, sauf si la requête est finie
+ par une période (.).
+\end_layout
+
+\begin_layout Description
+novc Ne pas utiliser un circuit virtuel.
+\end_layout
+
+\begin_layout Description
+nodebug Sans information de debogage.
+\end_layout
+
+\begin_layout Description
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Résolution du nom 
+\noun on
+servif-baie
+\end_layout
+
+\begin_layout Standard
+La figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:servifbaie"
+
+\end_inset
+
+ montre le résultat de la commande.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe1/img/servifbaie_linux.png
+	lyxscale 30
+	scale 40
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe1/img/servifbaie_windows.png
+	lyxscale 30
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:servifbaie"
+
+\end_inset
+
+ Résolution de la machine 
+\noun on
+servif-baie
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Il n'y a pas besoin du nom complet (avec le nom du domaine inclus) à cause
+ des paramètres 
+\noun on
+defname
+\noun default
+ et 
+\noun on
+domain
+\noun default
+, vus dans la section précedent.
+ Avec un nom de domaine défini et la option defname activé, les requêtes
+ d'un seul element (requêtes sans periode) sont automatiquement completées.
+ L'adresse de 
+\noun on
+servif-baie
+\noun default
+ est 134.214.104.22 et le type d'enregistrement utilisé est le type A (un IPv4,
+ 4 octets).
+\end_layout
+
+\begin_layout Subsubsection
+Résolution du mail
+\end_layout
+
+\begin_layout Standard
+La résolution de la machine 
+\noun on
+mail
+\noun default
+ est montré dans la figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:mail"
+
+\end_inset
+
+.
+ Son nom est 
+\noun on
+mail.insa-lyon.fr
+\noun default
+ (alias pour 
+\noun on
+dsi04.insa-lyon.fr
+\noun default
+).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe1/img/mail_linux.png
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe1/img/mail_windows.png
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mail"
+
+\end_inset
+
+ Résolution de 
+\noun on
+mail
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pour obtenir l'adresse du serveur de mail de 
+\noun on
+Lyon 1
+\noun default
+, on peut changer le type de la requête DNS, avec la commande 
+\begin_inset listings
+lstparams "basicstyle={\ttfamily}"
+inline true
+status open
+
+\begin_layout Plain Layout
+
+set type=mx
+\end_layout
+
+\end_inset
+
+ (figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:univlyon1"
+
+\end_inset
+
+).
+ Avec cette commande, on peut trouver les serveur 
+\noun on
+mail
+\noun default
+ liés à un certain domaine.
+ Le serveur de mail de Lyon 1 est, donc, 
+\noun on
+smtpbv.univ-lyyon1.fr
+\noun default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe1/img/univlyon1_linux.png
+	lyxscale 75
+	scale 40
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe1/img/univlyon1_windows.png
+	lyxscale 75
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:univlyon1"
+
+\end_inset
+
+ Résolution de 
+\noun on
+univ-lyon1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Vu qu'il existe seulement un serveur, la valeur de la préference (dans ce
+ cas, 5) n'est pas utile.
+ Par contre, on peut voir qu'il existe une répartition de charge entre 4
+ machines (134.214.128.75 ...
+ 134.214.128.77).
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Obtention du nom de 134.214.61.235
+\end_layout
+
+\begin_layout Standard
+Comme montré dans la figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:obtention_nom_machine"
+
+\end_inset
+
+, la machine 134.214.61.235 a comme nom 
+\noun on
+if-4207.insa-lyon.fr
+\noun default
+ et le type d'enregistrement utilisé est le type A.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe1/img/trouvermachine_linux.png
+	lyxscale 30
+	scale 40
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe1/img/trouvermachine_windows.png
+	lyxscale 30
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:obtention_nom_machine"
+
+\end_inset
+
+ Obtention du nom de 134.214.61.135
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Résolution du host 
+\noun on
+www.google.fr
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe1/img/resoudregoogle_linux.png
+	lyxscale 30
+	scale 40
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe1/img/resoudregoogle_windows.png
+	lyxscale 30
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:resoudregoogle"
+
+\end_inset
+
+ Résolution du nom 
+\noun on
+www.google.fr
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Finalement, pour le nom 
+\noun on
+www.google.fr
+\noun default
+ (figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:resoudregoogle"
+
+\end_inset
+
+), on peut voir que les adresses 
+\noun on
+www.google.fr
+\noun default
+ et 
+\noun on
+www.google.com
+\noun default
+ sont redirigées vers 
+\noun on
+www.l.google.com
+\noun default
+.
+ Pour bien pouvoir répondre à toutes requêtes, Google utilise des plusieurs
+ serveurs pour diviser la charge.
+ Le serveur est du type recursif et donc utilise un cache pour répondre
+ les requêtes.
+ Ceci est pas forcement à jour.
+ On parle alors d'une 
+\emph on
+réponse ne faisant pas autorité
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Conclusion
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+À partir des informations que nous venons de faire, on peut constater que
+ les types d'enregistrements concernés sont:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+A: Du à l'obtention de l'adresse IPv4
+\end_layout
+
+\begin_layout Description
+CNAME: Utilisation des 
+\emph on
+alias
+\end_layout
+
+\begin_layout Description
+SOA: Informations d'authorité de la zone DNS (serveur primaire, etc).
+ 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1943,6 +2633,250 @@ Annexe 1 - Gestion du DNS et du DHCP
 
 \begin_layout Subsection
 Annexe 2 - Proof of concept de la solution d'interconnexion
+\end_layout
+
+\begin_layout Subsubsection
+VLAN Tagged/Untagged
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Il est important de comprendre l'usage des VLANs 
+\begin_inset Quotes eld
+\end_inset
+
+tagged
+\begin_inset Quotes erd
+\end_inset
+
+ et 
+\begin_inset Quotes eld
+\end_inset
+
+untagged
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Un port peut être un membre 
+\begin_inset Quotes eld
+\end_inset
+
+untagged
+\begin_inset Quotes erd
+\end_inset
+
+ si il ne fait partie que d'un VLAN.
+ Par contre, dans le cas où un port peut correspondre à plusieurs VLANs,
+ il faut qu'il soit 
+\begin_inset Quotes eld
+\end_inset
+
+tagged
+\begin_inset Quotes erd
+\end_inset
+
+ pour chacun des VLANs auxquels il appartient.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Typiquement, les station finales seront marquées comme membres 
+\begin_inset Quotes eld
+\end_inset
+
+untagged
+\begin_inset Quotes erd
+\end_inset
+
+ d'une VLAN.
+ De l'autre côté, les connexions entre switchs devraient être 
+\begin_inset Quotes eld
+\end_inset
+
+tagged
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Dû à cette configuration, il sera possible de permettre aux stations finales
+ d'une même VLAN de partager les connexions avec autres VLANs.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Les adresses des switches utilisées son 134.214.105.222 pour le switch 2 et
+ 134.214.105.223 pour le switch 3.
+ En utilisant le modèle 3COM-4400 et l'application SUPER STACK pour gérer
+ et maintenir les switches, les menus de configuration des switches se trouvent
+ dans Bridge → VLAN → Display/Edit.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+Configuration du switch 2
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+En tenant compte de la configuration des switches, nous pouvons observer
+ que le VLAN 4 est connecté au switch 1 et son port 24 est connectée au
+ switch 2.
+ Ainsi, pour que le switch 2 puisse y accéder, il faut qu'on marque le port
+ 1 du switch 2 comme 
+\begin_inset Quotes eld
+\end_inset
+
+tagged
+\begin_inset Quotes erd
+\end_inset
+
+, comme la figure nous montre au dessous.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe2/images/f1.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang english
+Configuration du switch 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+On observe aussi que le port 24 est marqué comme 
+\begin_inset Quotes eld
+\end_inset
+
+tagged
+\begin_inset Quotes erd
+\end_inset
+
+.
+ C'est à cause du lien avec le switch 3.
+ Ce lien permet au switch 3 d'accéder au VLAN 4.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+Configuration du switch 3
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Pour la configuration du switch 3, nous avons utilisé presque la même configurat
+ion que pour le switch 2.
+ La différence c'est que nous avons marqué le port 6 comme 
+\begin_inset Quotes eld
+\end_inset
+
+untagged
+\begin_inset Quotes erd
+\end_inset
+
+ pour qu'elle soit accessible à partir d'un ordinateur du VLAN 4.
+ La figure ci-dessous nous montre sa configuration.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe2/images/f2.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang english
+Configuration du switch 3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pour les autres ports, nous les avons marquées comme Not a member pour qu'ils
+ ne soient pas accessibles sur le VLAN4 - TP.
+\end_layout
+
+\begin_layout Subsubsection
+Conclusion
+\end_layout
+
+\begin_layout Standard
+En utilisant cette configuration, nous nous assurons qu'on peut connecter
+ un PC au port 6 du switch 3 qui peut accéder au VLAN4 - TP et que les ports
+ 1-5, 7-23 ne peuvent pas y accéder.
 \end_layout
 
 \begin_layout Standard
