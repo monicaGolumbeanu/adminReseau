@@ -1285,7 +1285,7 @@ Documentation et support
 <features>
 <column alignment="center" valignment="top" width="9cm">
 <column alignment="center" valignment="top" width="5cm">
-<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="3.8cm">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -1881,7 +1881,7 @@ Annexe 0 - Schéma architecture
 \begin_inset Graphics
 	filename archi.png
 	lyxscale 20
-	scale 55
+	scale 52
 	rotateAngle 90
 
 \end_inset
@@ -1939,14 +1939,14 @@ status open
 \align center
 \begin_inset Graphics
 	filename /home/billy/programation/github/adminReseau/annexe1/img/nslookup_linux.png
-	scale 40
+	scale 34
 
 \end_inset
 
 
 \begin_inset Graphics
 	filename /home/billy/programation/github/adminReseau/annexe1/img/nslookup_windows.png
-	scale 40
+	scale 35
 
 \end_inset
 
@@ -2169,7 +2169,7 @@ status open
 \begin_inset Graphics
 	filename /home/billy/programation/github/adminReseau/annexe1/img/servifbaie_linux.png
 	lyxscale 30
-	scale 40
+	scale 34
 
 \end_inset
 
@@ -2177,7 +2177,7 @@ status open
 \begin_inset Graphics
 	filename /home/billy/programation/github/adminReseau/annexe1/img/servifbaie_windows.png
 	lyxscale 30
-	scale 40
+	scale 35
 
 \end_inset
 
@@ -2271,7 +2271,7 @@ status open
 \begin_inset Graphics
 	filename /home/billy/programation/github/adminReseau/annexe1/img/mail_linux.png
 	lyxscale 40
-	scale 40
+	scale 34
 
 \end_inset
 
@@ -2279,7 +2279,7 @@ status open
 \begin_inset Graphics
 	filename /home/billy/programation/github/adminReseau/annexe1/img/mail_windows.png
 	lyxscale 40
-	scale 40
+	scale 35
 
 \end_inset
 
@@ -2361,7 +2361,7 @@ status open
 \begin_inset Graphics
 	filename /home/billy/programation/github/adminReseau/annexe1/img/univlyon1_linux.png
 	lyxscale 75
-	scale 40
+	scale 34
 
 \end_inset
 
@@ -2369,7 +2369,7 @@ status open
 \begin_inset Graphics
 	filename /home/billy/programation/github/adminReseau/annexe1/img/univlyon1_windows.png
 	lyxscale 75
-	scale 40
+	scale 35
 
 \end_inset
 
@@ -2441,7 +2441,7 @@ status open
 \begin_inset Graphics
 	filename /home/billy/programation/github/adminReseau/annexe1/img/trouvermachine_linux.png
 	lyxscale 30
-	scale 40
+	scale 34
 
 \end_inset
 
@@ -2449,7 +2449,7 @@ status open
 \begin_inset Graphics
 	filename /home/billy/programation/github/adminReseau/annexe1/img/trouvermachine_windows.png
 	lyxscale 30
-	scale 40
+	scale 35
 
 \end_inset
 
@@ -2497,7 +2497,7 @@ status open
 \begin_inset Graphics
 	filename /home/billy/programation/github/adminReseau/annexe1/img/resoudregoogle_linux.png
 	lyxscale 30
-	scale 40
+	scale 34
 
 \end_inset
 
@@ -2505,7 +2505,7 @@ status open
 \begin_inset Graphics
 	filename /home/billy/programation/github/adminReseau/annexe1/img/resoudregoogle_windows.png
 	lyxscale 30
-	scale 40
+	scale 35
 
 \end_inset
 
@@ -2736,13 +2736,14 @@ tagged
 \begin_inset Quotes erd
 \end_inset
 
-, comme la figure nous montre au dessous.
+, comme la figure nous montre ci-dessous.
 \end_layout
 
 \begin_layout Standard
 
 \lang english
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -2825,6 +2826,7 @@ untagged
 
 \lang english
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -2890,6 +2892,1228 @@ En utilisant cette configuration, nous nous assurons qu'on peut connecter
 Annexe 3 - Monitoring réseau
 \end_layout
 
+\begin_layout Subsubsection
+Ipconfig Machine Windows
+\end_layout
+
+\begin_layout Standard
+Machine Windows : 134.214.105.165 
+\end_layout
+
+\begin_layout Standard
+Masque de sous réseau : 255.255.255.0 
+\end_layout
+
+\begin_layout Standard
+Passerelle par défaut : 134.214.105.1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe3/images/ipconfigWin.bmp
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+ipconfig Machine Windows
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Ipconfig Serveur Nagios
+\end_layout
+
+\begin_layout Standard
+Serveur Nagios : 134.214.105.156 
+\end_layout
+
+\begin_layout Standard
+Masque de sous réseau : 255.255.255.0
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe3/images/ifconfigNag.bmp
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+ifconfig Serveur Nagios
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On constate que les deux machines sont sur le même sous-réseau.
+\end_layout
+
+\begin_layout Subsubsection
+Netstat Machine Windows
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size large
+Netstat
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe3/images/netstatWin.bmp
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+netstat
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A chaque ligne correspond une connexion réseau établie entre la machine
+ windows locale et une machine distante.
+\end_layout
+
+\begin_layout Standard
+Les colonnes sont les suivantes : 
+\end_layout
+
+\begin_layout Description
+Proto : Indique le protocole de communication utilisé.
+ Celui-ci peut être : TCP, UDP, TCPv6 et UDPv6.
+\end_layout
+
+\begin_layout Description
+Adresse 
+\series bold
+locale
+\series default
+ : Indique le nom ou l'adresse IP de la machine sur laquelle netstat est
+ exécutée ainsi que le port de sortie de la connexion.
+\end_layout
+
+\begin_layout Description
+Adresse distante : Indique le nom ou l'adresse IP de la machine distante
+ avec laquelle la connexion est établie ainsi que le port d'entrée de la
+ connexion.
+\end_layout
+
+\begin_layout Description
+Etat : Indique l'état de la connexion.
+ Celui-ci peut être :
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+LISTENING -> En écoute
+\end_layout
+
+\begin_layout Itemize
+ESTABLISHED -> Etablie
+\end_layout
+
+\begin_layout Itemize
+TIME_WAIT -> En attente
+\end_layout
+
+\begin_layout Itemize
+CLOSE_WAIT -> En attente de fermeture
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Ici, on peut voir différentes connexions : 
+\end_layout
+
+\begin_layout Itemize
+Les quatres premières connexion sont établies entre if213-06 et la machine
+ locale 
+\end_layout
+
+\begin_layout Itemize
+La cinquième est en attente de fermeture entre if213-06 et la machine locale
+ 
+\end_layout
+
+\begin_layout Itemize
+Les sixième et septième connexions sont établies avec insa-lyon.fr pour l'accès
+ à servif-baie et home 
+\end_layout
+
+\begin_layout Itemize
+Trois connexions sont établies et une est en attente avec le serveur nagios
+ 
+\end_layout
+
+\begin_layout Itemize
+Les autres lignes correspondent à des connexions à des machines distantes
+ en utilisant les protocoles http et https.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Netstat -a
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe3/images/netstataWin.bmp
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+netstat -a
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La commande netstat -a présente en plus des connexions de netstat, les connexion
+s qui sont en écoute.
+ Les connexions dont l'adresse distante est *:* sont en écoute sur le port
+ de l'adresse locale.
+\end_layout
+
+\begin_layout Subsection*
+Netstat -e
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe3/images/netstateWin.bmp
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+netstat -e
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La commande netstat -e présente les informations concernant l'ensemble des
+ connexions.
+ On obtient ainsi le nombre d'octets, de paquets unicast et de paquets non
+ monodiffusion reçus et émis.
+ On peut également connaître le nombre de rejets ou d'erreurs.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Netstat -r
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe3/images/netstatrWin.bmp
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+netstat -r
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La commande netstat -r présente la table de routage ainsi que les itinéraires
+ actifs.
+ Pour chaque destination, est renseigné, son masque de sous réseau, l'adresse
+ de sa passerelle, l'adresse de son interface et sa métrique.
+ Certaines adresses sont remarquables : 
+\end_layout
+
+\begin_layout Standard
+127.0.0.0 -> Adresse de Loopback 
+\end_layout
+
+\begin_layout Standard
+134.214.105.165 -> Adresse de la machine Windows 
+\end_layout
+
+\begin_layout Standard
+134.214.255.255 -> Adresse de broadcast 
+\end_layout
+
+\begin_layout Standard
+192.168.0.1 -> Adresse de réseau privé
+\end_layout
+
+\begin_layout Subsubsection*
+Netstat -n
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe3/images/netstatnWin.bmp
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+netstat -n
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La commande netstat -n présente les connexions actives.
+ A la différence de netstat, cette commande ne présente jamais les noms
+ de la machine locale et des machines distantes mais uniquement les adresse
+ IP.
+ Les connexions LISTENING ne sont pas présente dans cette liste puisque
+ n'étant pas actives.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Netstat -p TCP
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe3/images/NetstatPTcp.bmp
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+netstat -p tcp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe3/images/NetstatP.bmp
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+netstat -p udp , -p ip, -p icmp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La commande netstat -p présente les connexions active pour le protocole
+ précisé.
+ On remarque ici qu'il n'y a que des connexions TCP.
+\end_layout
+
+\begin_layout Subsubsection*
+Netstat -s
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe3/images/netstatsWin.bmp
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+netstat -s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La commande netstat -s pésente les statistiques de toutes les connexions
+ par protocole.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Netstat Serveur nagios
+\end_layout
+
+\begin_layout Subsubsection*
+Netstat
+\end_layout
+
+\begin_layout Standard
+On éxécute les mêmes commandes sur le serveur nagios.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/Unknown.gif
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+netstat
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size large
+Netstat -a
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/Unknown.gif
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+netstat -a
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size large
+Netstat -e
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/Unknown.gif
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+netstat -e
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size large
+Netstat -r
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/Unknown.gif
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+netstat -r
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size large
+Netstat -n
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe3/images/NagiosNetstatN.bmp
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+netstat -n
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size large
+Netstat -p
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe3/images/NagiosNetstatP.bmp
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+netstat -p
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size large
+Netstat -s
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/Unknown.gif
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+netstat -s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Ping
+\end_layout
+
+\begin_layout Standard
+La commande ping permet de savoir si une machine ou un serveur est accessible
+ depuis une autre (machine sur laquelle est exécuter la commande).
+ Cette commande envoie un 
+\begin_inset Quotes eld
+\end_inset
+
+ping
+\begin_inset Quotes erd
+\end_inset
+
+ à la machine distante et attend une réponse.
+ Si la machine n'est pas accessible, la commande se terminera pas un échec
+ suite à un timeout.
+ L'exécution de la commande ping affiche le temps de réponse de la machine
+ distante.
+ Si la commande affiche un temps de réponse très long, c'est qu'il est possible
+ qu'il y ai un problème sur le réseau.
+\end_layout
+
+\begin_layout Standard
+Dans notre cas, le message suivant s'affiche sur la console :
+\end_layout
+
+\begin_layout Standard
+Réponse de 134.214.105.221 : octets=32 temps=1 ms TTL=254
+\end_layout
+
+\begin_layout Standard
+Dans ce cas, la machine distante à répondu et la réponse a été rapide.
+ Il n'y a donc a priori pas de problème sur le réseau.
+\end_layout
+
+\begin_layout Subsubsection
+Sniffer de paquet : Wireshark
+\end_layout
+
+\begin_layout Standard
+Le logiciel Wireshark permet d'analyser les trames circulant sur un réseau.
+ L'analyse de la requête ping permet de connaitre la composition de la trame.
+ Celle-ci fait 74 octets est composé d'un entête ethernet, d'un entête ip,
+ d'un entête icmp et de données.
+ L'entête ethernet présente les adresses MAC de source et de destination
+ de la trame et indique que le protocole ip est utilisé pour la couche supérieur
+e.
+ L'entête ip présente la version (ipv4), sa taille (20 octets), l'utilisation
+ du protocole de controle ICMP et checksum et les adresses ip de source
+ et de destination du paquet.
+ L'entête ICMP contient des contrôles de validité du paquet.
+ Les données sont écrites sur 32 octets.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe3/images/PingSwitchDetails.bmp
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Analyse de trame
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+MIB
+\end_layout
+
+\begin_layout Standard
+MIB est une base de données regroupant les informations concernant le métériel
+ sur lequel elle est installée.
+ Ces informations sont utiles pour gérer un réseau.
+ L'accès à la MIB se fait à l'aide du protocole snmp.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/Unknown.gif
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+MIB
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/Unknown.gif
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+snmpget
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On constate que le serveur snmp est lancé depuis un peu plus de 7 jours.
+ L'upTime permet de savoir s'il y a des coupures de courant.
+\end_layout
+
+\begin_layout Subsubsection
+Traceroute
+\end_layout
+
+\begin_layout Standard
+Principe de fonctionnement : Traceroute envoie des paquets UDP avec un paramètre
+ TTL (Time To Live) de plus en plus grand.
+ Lorsq'un routeur récupère un paquet ip, il décrémente TTL et retransmet
+ le paquet.
+ Lorque le TTL atteint 0, un paquet ICMP d'erreur Time To Live exceeded
+ et envoyé par le routeur à la source.
+ Les routeurs sont ainsi découvert de proche en proche.
+ Lorsque la destination est atteinte par un paquet, la source ne recoit
+ plus de paquet ICMP d'erreur mais un paquet ICMP Port Unreachable ayant
+ pour adresse source, l'adresse de l'élément sondé.
+\end_layout
+
+\begin_layout Standard
+La commande Traceroute permet ainsi de savoir par où passe les paquets à
+ destination d'une machine distante.
+ Cependant, traceroute ne montre que le chemin allant de la source à la
+ destination.
+ En effet, le chemin de retour peut être différent.
+ Afin de déterminer la topologie du réseau, il convient donc de faire un
+ traceroute depuis la machine Windows vers Iftpserv2 puis depuis Iftpserv2
+ vers la machine Windows.
+\end_layout
+
+\begin_layout Standard
+A noter que l'identification de la topologie peut ne pas être complète puisque
+ certains routeurs peuvent ne pas répondre aux requête ICMP.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size large
+Windows – Iftpserv2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe3/images/tracewiniftp.bmp
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+tracert Iftpserv2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size large
+Iftpserv2 – Windows
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe3/images/traceiftpwin.bmp
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+traceroute 134.214.105.165
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size large
+Topologie du réseau
+\end_layout
+
+\begin_layout Standard
+Les deux traceroutes nous permettent de déduire la topologie du réseau.
+ La machine Windows et iftpserv2 sont interconnecté par l'intermédiaire
+ du routeur ifswitch01.insa-lyon.fr.
+ Celui ci à au moins deux interfaces : 134.214.104.1 et 134.214.105.1.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/Unknown.gif
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Topologie du reseau
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
@@ -2899,6 +4123,2443 @@ Annexe 3 - Monitoring réseau
 
 \begin_layout Subsection
 Annexe 4 - Organisation de NAGIOS
+\end_layout
+
+\begin_layout Standard
+Parmi les logiciels libre de supervision, Nagios est le plus répandu et
+ également le plus suivi par la communauté de développeur.
+ Nagios (anciennement appelé Netsaint) est une application permettant la
+ surveillance système et réseau.
+ Elle surveille les hôtes et services spécifiés, alertant lorsque les systèmes
+ vont mal et quand ils vont mieux.
+\end_layout
+
+\begin_layout Subsubsection
+NAGIOS
+\end_layout
+
+\begin_layout Standard
+Nous allons ajouter la machine windows if213-06 , IP 134.214.105.165.
+ On va modifier les fichies de configuration: en premier le fichier NSC.ini
+ de NSClient++ et après Nagios.cfg et Windows.cfg sur le serveur Nagios (
+ à travers une connexion SSH).
+ En fait on va créer un fichier de configuration (Exemple.cfg) pour chaque
+ host qu'on ajoute et va ajouter une ligne donnant le nom de ce fichier
+ dans Nagios.cfg : cfg_file=/usr/local/nagios/etc/objects/Exemple.cfg
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size large
+NSC.INI
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+[modules]
+\end_layout
+
+\begin_layout Plain Layout
+
+FileLogger.dll
+\end_layout
+
+\begin_layout Plain Layout
+
+CheckSystem.dll
+\end_layout
+
+\begin_layout Plain Layout
+
+CheckDisk.dll
+\end_layout
+
+\begin_layout Plain Layout
+
+NSClientListener.dll
+\end_layout
+
+\begin_layout Plain Layout
+
+NRPEListener.dll
+\end_layout
+
+\begin_layout Plain Layout
+
+SysTray.dll
+\end_layout
+
+\begin_layout Plain Layout
+
+CheckEventLog.dll
+\end_layout
+
+\begin_layout Plain Layout
+
+CheckHelpers.dll
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+;CheckWMI.dll
+\end_layout
+
+\begin_layout Plain Layout
+
+[Settings]
+\end_layout
+
+\begin_layout Plain Layout
+
+;# OBFUSCATED PASSWORD
+\end_layout
+
+\begin_layout Plain Layout
+
+; This is the same as the password option but here you can store the password
+ in an obfuscated manner.
+\end_layout
+
+\begin_layout Plain Layout
+
+; *NOTICE* obfuscation is *NOT* the same as encryption, someone with access
+ to this file can still figure out the 
+\end_layout
+
+\begin_layout Plain Layout
+
+; password.
+ Its just a bit harder to do it at first glance.
+\end_layout
+
+\begin_layout Plain Layout
+
+;obfuscated_password=Jw0KAUUdXlAAUwASDAAB
+\end_layout
+
+\begin_layout Plain Layout
+
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+;# PASSWORD
+\end_layout
+
+\begin_layout Plain Layout
+
+; This is the password (-s) that is required to access NSClient remotely.
+ If you leave this blank everyone will be able to access the daemon remotly.
+\end_layout
+
+\begin_layout Plain Layout
+
+password=passe
+\end_layout
+
+\begin_layout Plain Layout
+
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+;# ALLOWED HOST ADDRESSES
+\end_layout
+
+\begin_layout Plain Layout
+
+; This is a comma-delimited list of IP address of hosts that are allowed
+ to talk to the all daemons.
+\end_layout
+
+\begin_layout Plain Layout
+
+; If leave this blank anyone can access the deamon remotly (NSClient still
+ requires a valid password).
+\end_layout
+
+\begin_layout Plain Layout
+
+allowed_hosts=134.214.105.165,134.214.105.156
+\end_layout
+
+\begin_layout Plain Layout
+
+[log]
+\end_layout
+
+\begin_layout Plain Layout
+
+;# LOG DEBUG
+\end_layout
+
+\begin_layout Plain Layout
+
+; Set to 1 if you want debug message printed in the log file (debug messages
+ are always printed to stdout when run with -test)
+\end_layout
+
+\begin_layout Plain Layout
+
+;debug=1
+\end_layout
+
+\begin_layout Plain Layout
+
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+;# LOG FILE
+\end_layout
+
+\begin_layout Plain Layout
+
+; The file to print log statements to
+\end_layout
+
+\begin_layout Plain Layout
+
+file=NSC_H4312.log
+\end_layout
+
+\begin_layout Plain Layout
+
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+;# LOG DATE MASK
+\end_layout
+
+\begin_layout Plain Layout
+
+; The format to for the date/time part of the log entry written to file.
+\end_layout
+
+\begin_layout Plain Layout
+
+;date_mask=%Y-%m-%d %H:%M:%S
+\end_layout
+
+\begin_layout Plain Layout
+
+[NSClient]
+\end_layout
+
+\begin_layout Plain Layout
+
+;# NSCLIENT PORT NUMBER
+\end_layout
+
+\begin_layout Plain Layout
+
+; This is the port the NSClientListener.dll will listen to.
+\end_layout
+
+\begin_layout Plain Layout
+
+port=12489
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size large
+NAGIOS.CFG
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+# Definitions for monitoring the local (Linux) host
+\end_layout
+
+\begin_layout Plain Layout
+
+cfg_file=/usr/local/nagios/etc/objects/localhost.cfg
+\end_layout
+
+\begin_layout Plain Layout
+
+# Definitions for monitoring a Windows machine
+\end_layout
+
+\begin_layout Plain Layout
+
+cfg_file=/usr/local/nagios/etc/objects/windows.cfg
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size large
+WINDOWS.CFG
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+######################################################################
+\end_layout
+
+\begin_layout Plain Layout
+
+######################################################################
+\end_layout
+
+\begin_layout Plain Layout
+
+#
+\end_layout
+
+\begin_layout Plain Layout
+
+# HOST DEFINITIONS
+\end_layout
+
+\begin_layout Plain Layout
+
+#
+\end_layout
+
+\begin_layout Plain Layout
+
+######################################################################
+\end_layout
+
+\begin_layout Plain Layout
+
+######################################################################
+\end_layout
+
+\begin_layout Plain Layout
+
+# Define a host for the Windows machine we'll be monitoring
+\end_layout
+
+\begin_layout Plain Layout
+
+# Change the host_name, alias, and address to fit your situation
+\end_layout
+
+\begin_layout Plain Layout
+
+define host{
+\end_layout
+
+\begin_layout Plain Layout
+
+use windows-server ; Inherit default values from a template
+\end_layout
+
+\begin_layout Plain Layout
+
+host_name if213-06 ; The name we're giving to this host
+\end_layout
+
+\begin_layout Plain Layout
+
+alias Machine-test ; longer name associated with the host
+\end_layout
+
+\begin_layout Plain Layout
+
+address 134.214.105.165 ; IP address of the host
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+######################################################################
+\end_layout
+
+\begin_layout Plain Layout
+
+######################################################################
+\end_layout
+
+\begin_layout Plain Layout
+
+#
+\end_layout
+
+\begin_layout Plain Layout
+
+# HOST GROUP DEFINITIONS
+\end_layout
+
+\begin_layout Plain Layout
+
+#
+\end_layout
+
+\begin_layout Plain Layout
+
+######################################################################
+\end_layout
+
+\begin_layout Plain Layout
+
+######################################################################
+\end_layout
+
+\begin_layout Plain Layout
+
+# Define a hostgroup for Windows machines
+\end_layout
+
+\begin_layout Plain Layout
+
+# All hosts that use the windows-server template will automatically be a
+ member of this group
+\end_layout
+
+\begin_layout Plain Layout
+
+define hostgroup{
+\end_layout
+
+\begin_layout Plain Layout
+
+hostgroup_name windows-servers ; The name of the hostgroup
+\end_layout
+
+\begin_layout Plain Layout
+
+alias Windows Servers ; Long name of the group
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+######################################################################
+\end_layout
+
+\begin_layout Plain Layout
+
+######################################################################
+\end_layout
+
+\begin_layout Plain Layout
+
+#
+\end_layout
+
+\begin_layout Plain Layout
+
+# SERVICE DEFINITIONS
+\end_layout
+
+\begin_layout Plain Layout
+
+#
+\end_layout
+
+\begin_layout Plain Layout
+
+######################################################################
+\end_layout
+
+\begin_layout Plain Layout
+
+######################################################################
+\end_layout
+
+\begin_layout Plain Layout
+
+# Create a service for monitoring the version of NSCLient++ that is installed
+\end_layout
+
+\begin_layout Plain Layout
+
+# Change the host_name to match the name of the host you defined above
+\end_layout
+
+\begin_layout Plain Layout
+
+define service{
+\end_layout
+
+\begin_layout Plain Layout
+
+use generic-service
+\end_layout
+
+\begin_layout Plain Layout
+
+host_name if213-06
+\end_layout
+
+\begin_layout Plain Layout
+
+service_description NSClient++ Version
+\end_layout
+
+\begin_layout Plain Layout
+
+check_command check_nt!CLIENTVERSION
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+# Create a service for monitoring the uptime of the server
+\end_layout
+
+\begin_layout Plain Layout
+
+# Change the host_name to match the name of the host you defined above
+\end_layout
+
+\begin_layout Plain Layout
+
+define service{
+\end_layout
+
+\begin_layout Plain Layout
+
+use generic-service
+\end_layout
+
+\begin_layout Plain Layout
+
+host_name if213-06
+\end_layout
+
+\begin_layout Plain Layout
+
+service_description Uptime
+\end_layout
+
+\begin_layout Plain Layout
+
+check_command check_nt!UPTIME
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+# Create a service for monitoring CPU load
+\end_layout
+
+\begin_layout Plain Layout
+
+# Change the host_name to match the name of the host you defined above
+\end_layout
+
+\begin_layout Plain Layout
+
+define service{
+\end_layout
+
+\begin_layout Plain Layout
+
+use generic-service
+\end_layout
+
+\begin_layout Plain Layout
+
+host_name if213-06
+\end_layout
+
+\begin_layout Plain Layout
+
+service_description CPU Load
+\end_layout
+
+\begin_layout Plain Layout
+
+check_command check_nt!CPULOAD!-l 5,80,90
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+# Create a service for monitoring memory usage
+\end_layout
+
+\begin_layout Plain Layout
+
+# Change the host_name to match the name of the host you defined above
+\end_layout
+
+\begin_layout Plain Layout
+
+define service{
+\end_layout
+
+\begin_layout Plain Layout
+
+use generic-service
+\end_layout
+
+\begin_layout Plain Layout
+
+host_name if213-06
+\end_layout
+
+\begin_layout Plain Layout
+
+service_description Memory Usage
+\end_layout
+
+\begin_layout Plain Layout
+
+check_command check_nt!MEMUSE!-w 80 -c 90
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+# Create a service for monitoring C:
+\backslash
+ disk usage
+\end_layout
+
+\begin_layout Plain Layout
+
+# Change the host_name to match the name of the host you defined above
+\end_layout
+
+\begin_layout Plain Layout
+
+define service{
+\end_layout
+
+\begin_layout Plain Layout
+
+use generic-service
+\end_layout
+
+\begin_layout Plain Layout
+
+host_name if213-06
+\end_layout
+
+\begin_layout Plain Layout
+
+service_description C:
+\backslash
+ Drive Space
+\end_layout
+
+\begin_layout Plain Layout
+
+check_command check_nt!USEDDISKSPACE!-l c -w 80 -c 90
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+# Create a service for monitoring the W3SVC service
+\end_layout
+
+\begin_layout Plain Layout
+
+# Change the host_name to match the name of the host you defined above
+\end_layout
+
+\begin_layout Plain Layout
+
+define service{
+\end_layout
+
+\begin_layout Plain Layout
+
+use generic-service
+\end_layout
+
+\begin_layout Plain Layout
+
+host_name if213-06
+\end_layout
+
+\begin_layout Plain Layout
+
+service_description W3SVC
+\end_layout
+
+\begin_layout Plain Layout
+
+check_command check_nt!SERVICESTATE!-d SHOWALL -l W3SVC
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+# Create a service for monitoring the Explorer.exe process
+\end_layout
+
+\begin_layout Plain Layout
+
+# Change the host_name to match the name of the host you defined above
+\end_layout
+
+\begin_layout Plain Layout
+
+define service{
+\end_layout
+
+\begin_layout Plain Layout
+
+use generic-service
+\end_layout
+
+\begin_layout Plain Layout
+
+host_name if213-06
+\end_layout
+
+\begin_layout Plain Layout
+
+service_description Explorer
+\end_layout
+
+\begin_layout Plain Layout
+
+check_command check_nt!PROCSTATE!-d SHOWALL -l Explorer.exe
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size large
+Résultats NAGIOS
+\end_layout
+
+\begin_layout Standard
+On va commencer par monter la machine que nous avons ajouté : if213-06.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe4/imagini/hosts.jpg
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Statut de la machine que nous avons ajouté
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Localhost est la machine propre à Nagios.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe4/imagini/carte.jpg
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Carte des machines surveillées dressée par Nagios
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On peut aussi voir les details d'etat de chaque host et faire des check
+ manuellement: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe4/imagini/PRINT1.jpg
+	lyxscale 30
+	scale 67
+	rotateAngle 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Statuts des machines observées
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On va essayer eteindre la machine if213-06, faire un check manuellement
+ et regarder a partir d'une autre machine son status:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe4/imagini/print2.jpg
+	lyxscale 20
+	scale 35
+	rotateAngle 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Statuts après extinction de if-213-06
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On peut voir que tous les services sont passé à critucal d'ou on a bien
+ detecté que la machine à etait eteinte.
+ 
+\end_layout
+
+\begin_layout Standard
+En suite on va regarder les problemes, les raports et les alerts.
+ 
+\end_layout
+
+\begin_layout Standard
+Pour voir les problemes au moment actuel on peut cliquer sur Problems.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe4/imagini/problems.jpg
+	lyxscale 30
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Problèmes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pat contre, si on veut avoir de statistiques au consulter l'historique,
+ on peut le faire dans la partie Reports.
+ On va créer un raport pour la derniere semaine et regarder l'activité de
+ tous les hosts:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe4/imagini/report.jpg
+	lyxscale 30
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Activité des machines par groupe
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On peut aussi regrader l'activité plus en detail d'un seul host.
+ Pour example notre host, if213-06 pendant les dernieres 24h :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe4/imagini/213 report 1 jour.jpg
+	lyxscale 30
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Activité d'une machine
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+MRTG
+\end_layout
+
+\begin_layout Standard
+On va monitorer le switch 134.214.105.222.
+\end_layout
+
+\begin_layout Standard
+Dans un premier temps on va créer le dossier /var/www/mrtg/134.214.105.222
+ 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\begin_inset listings
+lstparams "language=bash"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+sudo mkdir /var/www/mrtg/A.B.C.D
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On ajoute la machine a superviser et donc on crée son fichier de configuration
+ (un fichier de configuration/machine a superviser)
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\begin_inset listings
+lstparams "language=bash"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+cfgmaker --global 'WorkDir: /var/www/mrtg/134.214.105.222'
+\end_layout
+
+\begin_layout Plain Layout
+
+		 --ifdesc=descr --global 'Language: french'
+\end_layout
+
+\begin_layout Plain Layout
+
+		 --global 'Options[_]: bits,growright'
+\end_layout
+
+\begin_layout Plain Layout
+
+		 public@134.214.105.222 >
+\end_layout
+
+\begin_layout Plain Layout
+
+		 /var/www/mrtg/134.214.105.222/134.214.105.222.cfg
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Générer automatiquement les graphes: nous allons donc créer un script SHELL
+ que nous lancerons en utilisant crontab.
+ Ce script SHELL va lancer MRTG avec le fichier de configuration créé auparavant.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\begin_inset listings
+lstparams "language=bash"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#!/bin/sh
+\end_layout
+
+\begin_layout Plain Layout
+
+/var/www/mrtg/134.214.105.222 env LANG=C
+\end_layout
+
+\begin_layout Plain Layout
+
+/usr/bin/mrtg/var/www/mrtg/134.214.105.222/134.214.105.222.cfg
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Puis on lui donne les droits en exécution:
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+chmod a+x /usr/local/bin/mrtgcron.sh
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Et enfin, on programme la crontab (crontab -l) en ajoutant la ligne suivante:
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+*/5 * * * * /usr/local/bin/mrtgcron.sh
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size large
+134.214.105.222.cfg
+\end_layout
+
+\begin_layout Standard
+Pour pouvoir voir et afficher les graphes il faut ajouter une entrée pour
+ chaque graphe dans le fichier de configuration 134.214.105.222.cfg (on ne mettra
+ ici que le code pour le premier graphe, les 3 autres étant similaires).
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+# /usr/bin/cfgmaker --global 'WorkDir: /var/www/mrtg/134.214.105.222'
+\end_layout
+
+\begin_layout Plain Layout
+
+#                   --ifdesc=descr --global 'Language: french'
+\end_layout
+
+\begin_layout Plain Layout
+
+#                   --global 'Options[_]: bits,growright'
+\end_layout
+
+\begin_layout Plain Layout
+
+#                   public@134.214.105.222
+\end_layout
+
+\begin_layout Plain Layout
+
+### Global Defaults
+\end_layout
+
+\begin_layout Plain Layout
+
+EnableIPv6: no
+\end_layout
+
+\begin_layout Plain Layout
+
+WorkDir: /var/www/mrtg/134.214.105.222
+\end_layout
+
+\begin_layout Plain Layout
+
+Language: french
+\end_layout
+
+\begin_layout Plain Layout
+
+Options[_]: bits,growright
+\end_layout
+
+\begin_layout Plain Layout
+
+### Interface 101 >> Descr: 'RMON-Port-01-on-unit-1' | Name: '' | Ip: ''
+ | Eth: '' ###
+\end_layout
+
+\begin_layout Plain Layout
+
+Target[134.214.105.222_101]: 101:public@134.214.105.222:
+\end_layout
+
+\begin_layout Plain Layout
+
+SetEnv[134.214.105.222_101]: MRTG_INT_IP="" MRTG_INT_DESCR="RMON-Port-01-on-unit-1"
+\end_layout
+
+\begin_layout Plain Layout
+
+MaxBytes[134.214.105.222_101]: 12500000
+\end_layout
+
+\begin_layout Plain Layout
+
+Title[134.214.105.222_101]: RMON Port 01 on unit 1 -- switchTP222
+\end_layout
+
+\begin_layout Plain Layout
+
+PageTop[134.214.105.222_101]: <h1>RMON Port 01 on unit 1 -- switchTP222</h1>
+\end_layout
+
+\begin_layout Plain Layout
+
+<div id="sysdetails">
+\end_layout
+
+\begin_layout Plain Layout
+
+<table>
+\end_layout
+
+\begin_layout Plain Layout
+
+<tr>
+\end_layout
+
+\begin_layout Plain Layout
+
+<td>System:</td>
+\end_layout
+
+\begin_layout Plain Layout
+
+<td>switchTP222 in chez nous</td>
+\end_layout
+
+\begin_layout Plain Layout
+
+</tr>
+\end_layout
+
+\begin_layout Plain Layout
+
+<tr>
+\end_layout
+
+\begin_layout Plain Layout
+
+<td>Maintainer:</td>
+\end_layout
+
+\begin_layout Plain Layout
+
+<td>admin</td>
+\end_layout
+
+\begin_layout Plain Layout
+
+</tr>
+\end_layout
+
+\begin_layout Plain Layout
+
+<tr>
+\end_layout
+
+\begin_layout Plain Layout
+
+<td>Description:</td>
+\end_layout
+
+\begin_layout Plain Layout
+
+<td>RMON-Port-01-on-unit-1 RMON Port 01 on unit 1 </td>
+\end_layout
+
+\begin_layout Plain Layout
+
+</tr>
+\end_layout
+
+\begin_layout Plain Layout
+
+<tr>
+\end_layout
+
+\begin_layout Plain Layout
+
+<td>ifType:</td>
+\end_layout
+
+\begin_layout Plain Layout
+
+<td>ethernetCsmacd (6)</td>
+\end_layout
+
+\begin_layout Plain Layout
+
+</tr>
+\end_layout
+
+\begin_layout Plain Layout
+
+<tr>
+\end_layout
+
+\begin_layout Plain Layout
+
+<td>ifName:</td>
+\end_layout
+
+\begin_layout Plain Layout
+
+<td></td>
+\end_layout
+
+\begin_layout Plain Layout
+
+</tr>
+\end_layout
+
+\begin_layout Plain Layout
+
+<tr>
+\end_layout
+
+\begin_layout Plain Layout
+
+<td>Max Speed:</td>
+\end_layout
+
+\begin_layout Plain Layout
+
+<td>100.0 Mbits/s</td>
+\end_layout
+
+\begin_layout Plain Layout
+
+</tr>
+\end_layout
+
+\begin_layout Plain Layout
+
+</table>
+\end_layout
+
+\begin_layout Plain Layout
+
+</div>
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size large
+Résultats MRTG
+\end_layout
+
+\begin_layout Standard
+On a monitoré pendant 3 jours.
+ Dans le repertoire www/mrtg/134.214.105.222 on a 16 images generées automatiquemen
+t.
+ On a des information par jour, semaine, mois, an pour les 4 ports choisis.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe4/imagini/mrtg1.jpg
+	lyxscale 20
+	scale 37
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Graphiques une heure après démarrage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Après 3 jours pour le Managemet Port, 134.214.105.222 on unit 1, swtchTP222
+ :
+\end_layout
+
+\begin_layout Standard
+Image par jour:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe4/imagini/134.214.105.222_199-day.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Image par jour
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe4/imagini/134.214.105.222_199-week.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Image par semaine
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe4/imagini/134.214.105.222_199-month.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Image par mois
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe4/imagini/134.214.105.222_199-year.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Image par an
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+NRPE
+\end_layout
+
+\begin_layout Standard
+A l'aide de NRPE nous pouvons superviser des machines Linux.
+ On a par exemple ajouté la machine 134.214.105.189 (nom: h4312_linux) et on
+ a changé la configuration du serveur Nagios pour qu'il utilise NRPE (nouveau
+ nom: h4312_localhost).
+\end_layout
+
+\begin_layout Standard
+On a repris la base NRPE qui était fournie et on l'a modifié pour pouvoir
+ ajouter les deux machines.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+NRPE.CFG
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+# LOG FACILITY
+\end_layout
+
+\begin_layout Plain Layout
+
+# The syslog facility that should be used for logging purposes.
+\end_layout
+
+\begin_layout Plain Layout
+
+log_facility=daemon
+\end_layout
+
+\begin_layout Plain Layout
+
+# PID FILE
+\end_layout
+
+\begin_layout Plain Layout
+
+# The name of the file in which the NRPE daemon should write it's process
+ ID
+\end_layout
+
+\begin_layout Plain Layout
+
+# number.
+ The file is only written if the NRPE daemon is started by the root
+\end_layout
+
+\begin_layout Plain Layout
+
+# user and is running in standalone mode.
+\end_layout
+
+\begin_layout Plain Layout
+
+pid_file=/var/run/nrpe.pid
+\end_layout
+
+\begin_layout Plain Layout
+
+# COMMAND ARGUMENT PROCESSING
+\end_layout
+
+\begin_layout Plain Layout
+
+# This option determines whether or not the NRPE daemon will allow clients
+\end_layout
+
+\begin_layout Plain Layout
+
+# to specify arguments to commands that are executed.
+ This option only works
+\end_layout
+
+\begin_layout Plain Layout
+
+# if the daemon was configured with the --enable-command-args configure
+ script
+\end_layout
+
+\begin_layout Plain Layout
+
+# option.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+#
+\end_layout
+
+\begin_layout Plain Layout
+
+# *** ENABLING THIS OPTION IS A SECURITY RISK! *** 
+\end_layout
+
+\begin_layout Plain Layout
+
+# Read the SECURITY file for information on some of the security implications
+\end_layout
+
+\begin_layout Plain Layout
+
+# of enabling this variable.
+\end_layout
+
+\begin_layout Plain Layout
+
+#
+\end_layout
+
+\begin_layout Plain Layout
+
+# Values: 0=do not allow arguments, 1=allow command arguments
+\end_layout
+
+\begin_layout Plain Layout
+
+dont_blame_nrpe=0
+\end_layout
+
+\begin_layout Plain Layout
+
+# DEBUGGING OPTION
+\end_layout
+
+\begin_layout Plain Layout
+
+# This option determines whether or not debugging messages are logged to
+ the
+\end_layout
+
+\begin_layout Plain Layout
+
+# syslog facility.
+\end_layout
+
+\begin_layout Plain Layout
+
+# Values: 0=debugging off, 1=debugging on
+\end_layout
+
+\begin_layout Plain Layout
+
+debug=0
+\end_layout
+
+\begin_layout Plain Layout
+
+# COMMAND TIMEOUT
+\end_layout
+
+\begin_layout Plain Layout
+
+# This specifies the maximum number of seconds that the NRPE daemon will
+\end_layout
+
+\begin_layout Plain Layout
+
+# allow plugins to finish executing before killing them off.
+\end_layout
+
+\begin_layout Plain Layout
+
+command_timeout=60
+\end_layout
+
+\begin_layout Plain Layout
+
+# CONNECTION TIMEOUT
+\end_layout
+
+\begin_layout Plain Layout
+
+# This specifies the maximum number of seconds that the NRPE daemon will
+\end_layout
+
+\begin_layout Plain Layout
+
+# wait for a connection to be established before exiting.
+ This is sometimes
+\end_layout
+
+\begin_layout Plain Layout
+
+# seen where a network problem stops the SSL being established even though
+\end_layout
+
+\begin_layout Plain Layout
+
+# all network sessions are connected.
+ This causes the nrpe daemons to
+\end_layout
+
+\begin_layout Plain Layout
+
+# accumulate, eating system resources.
+ Do not set this too low.
+\end_layout
+
+\begin_layout Plain Layout
+
+connection_timeout=300
+\end_layout
+
+\begin_layout Plain Layout
+
+# COMMAND DEFINITIONS
+\end_layout
+
+\begin_layout Plain Layout
+
+# Command definitions that this daemon will run.
+ Definitions
+\end_layout
+
+\begin_layout Plain Layout
+
+# are in the following format:
+\end_layout
+
+\begin_layout Plain Layout
+
+#
+\end_layout
+
+\begin_layout Plain Layout
+
+# command[<command_name>]=<command_line>
+\end_layout
+
+\begin_layout Plain Layout
+
+#
+\end_layout
+
+\begin_layout Plain Layout
+
+# When the daemon receives a request to return the results of <command_name>
+\end_layout
+
+\begin_layout Plain Layout
+
+# it will execute the command specified by the <command_line> argument.
+\end_layout
+
+\begin_layout Plain Layout
+
+#
+\end_layout
+
+\begin_layout Plain Layout
+
+# Unlike Nagios, the command line cannot contain macros - it must be
+\end_layout
+
+\begin_layout Plain Layout
+
+# typed exactly as it should be executed.
+\end_layout
+
+\begin_layout Plain Layout
+
+command[check_users]=/usr/local/nagios/libexec/check_users -w 5 -c 10
+\end_layout
+
+\begin_layout Plain Layout
+
+command[check_load]=/usr/local/nagios/libexec/check_load -w 15,10,5 -c 30,25,20
+\end_layout
+
+\begin_layout Plain Layout
+
+command[check_hda1]=/usr/local/nagios/libexec/check_disk -w 20% -c 10% -p
+ /dev/sda1
+\end_layout
+
+\begin_layout Plain Layout
+
+command[check_zombie_procs]=/usr/local/nagios/libexec/check_procs -w 5 -c
+ 10 -s Z
+\end_layout
+
+\begin_layout Plain Layout
+
+command[check_total_procs]=/usr/local/nagios/libexec/check_procs -w 150
+ -c 200 
+\end_layout
+
+\begin_layout Plain Layout
+
+command[check_hdd]=/usr/local/nagios/libexec/check_disk -w 20 -c 10 -p /
+\end_layout
+
+\begin_layout Plain Layout
+
+command[check_swaphdd]=/usr/local/nagios/libexec/check_swap -w 20 -c 10
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+h4312_linux.cfg
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+On a ajouter les services demandés (gestion des users, zombies,
+\end_layout
+
+\begin_layout Plain Layout
+
+processus et charge CPU) pour monitorer la machine.
+ Le code pour le
+\end_layout
+
+\begin_layout Plain Layout
+
+serveur Nagios est similaire a celui-ci et donc on va pas le mettre
+\end_layout
+
+\begin_layout Plain Layout
+
+dans le compte-rendu.
+\end_layout
+
+\begin_layout Plain Layout
+
+################################################
+\end_layout
+
+\begin_layout Plain Layout
+
+# Monitoring teacher's linux avec NRPE 
+\end_layout
+
+\begin_layout Plain Layout
+
+################################################
+\end_layout
+
+\begin_layout Plain Layout
+
+#########################
+\end_layout
+
+\begin_layout Plain Layout
+
+## HOST
+\end_layout
+
+\begin_layout Plain Layout
+
+#########################
+\end_layout
+
+\begin_layout Plain Layout
+
+define host {
+\end_layout
+
+\begin_layout Plain Layout
+
+use linux-server
+\end_layout
+
+\begin_layout Plain Layout
+
+host_name h4312_linux
+\end_layout
+
+\begin_layout Plain Layout
+
+alias remote Linux
+\end_layout
+
+\begin_layout Plain Layout
+
+address 134.214.105.189
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+#########################
+\end_layout
+
+\begin_layout Plain Layout
+
+## SERVICES
+\end_layout
+
+\begin_layout Plain Layout
+
+#########################
+\end_layout
+
+\begin_layout Plain Layout
+
+# Charge CPU
+\end_layout
+
+\begin_layout Plain Layout
+
+define service{
+\end_layout
+
+\begin_layout Plain Layout
+
+use generic-service
+\end_layout
+
+\begin_layout Plain Layout
+
+host_name h4312_linux
+\end_layout
+
+\begin_layout Plain Layout
+
+service_description CPU Load
+\end_layout
+
+\begin_layout Plain Layout
+
+check_command check_nrpe!check_load
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+# Users
+\end_layout
+
+\begin_layout Plain Layout
+
+define service{
+\end_layout
+
+\begin_layout Plain Layout
+
+use generic-service
+\end_layout
+
+\begin_layout Plain Layout
+
+host_name h4312_linux
+\end_layout
+
+\begin_layout Plain Layout
+
+service_description Users
+\end_layout
+
+\begin_layout Plain Layout
+
+check_command check_nrpe!check_users
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+# Zombies
+\end_layout
+
+\begin_layout Plain Layout
+
+define service{
+\end_layout
+
+\begin_layout Plain Layout
+
+use generic-service
+\end_layout
+
+\begin_layout Plain Layout
+
+host_name h4312_linux
+\end_layout
+
+\begin_layout Plain Layout
+
+service_description Zombies
+\end_layout
+
+\begin_layout Plain Layout
+
+check_command check_nrpe!check_zombie_procs
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+# Processus
+\end_layout
+
+\begin_layout Plain Layout
+
+define service{
+\end_layout
+
+\begin_layout Plain Layout
+
+use generic-service
+\end_layout
+
+\begin_layout Plain Layout
+
+host_name h4312_linux
+\end_layout
+
+\begin_layout Plain Layout
+
+service_description Processus
+\end_layout
+
+\begin_layout Plain Layout
+
+check_command check_nrpe!check_total_procs
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+NAGIOS.CFG
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+# Definitions for monitoring the local (Linux) host
+\end_layout
+
+\begin_layout Plain Layout
+
+cfg_file=/usr/local/nagios/etc/objects/h4312_localhost.cfg
+\end_layout
+
+\begin_layout Plain Layout
+
+# Definitions for monitoring a Windows machine
+\end_layout
+
+\begin_layout Plain Layout
+
+cfg_file=/usr/local/nagios/etc/objects/windows.cfg
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Résultats NRPE
+\end_layout
+
+\begin_layout Standard
+On a ajouté la machine linux monitorée a l'aide de NRPE:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe4/imagini/map_nrpe.PNG
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Machines monitorées par noagios
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Le client sur la machine if213-06 est éteint.
+ On peut visualiser pour la machine Linux le status des parametres qu'on
+ a ajouté :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /home/billy/programation/github/adminReseau/annexe4/imagini/status_nrpe.PNG
+	lyxscale 30
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Statuts des paramètres observés
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Analyse critique de l'Installation/Utilisation de Nagios
+\end_layout
+
+\begin_layout Standard
+Le gros avantage de Nagios est le fait que c'est un outil qui dispose d'une
+ documentation très fournie.
+ Il est très modulable et flexible grâce à son fonctionnement par fichier
+ de configuration.
+ Mais ce qui fait sa force fait aussi sa faiblesse car ces fichiers de configura
+tions multiples peuvent poser des problème s'il y en a beaucoup, particulièremen
+t lorsqu'on n'est pas habitué à cette méthode de fonctionnement.
+ Cela nécessite une bonne organisation pour s'y retrouver mais lorsqu'on
+ est bien organisé, on peut facilement automatiser le traitement des information
+s grâce à des scripts.
+ 
+\end_layout
+
+\begin_layout Standard
+Son installation n'est pas très compliquée.
+ C'est un simple système client-serveur.
+ On installe le serveur puis les clients puis il faut configurer.
+ Il faut configurer les clients pour qu'ils acceptent les connexions et
+ les échanges d'information.
+ Il faut configurer le serveur pour chaque client que l'on ajoute.
+ Il faut savoir que l'on peut utiliser un seul fichier de configuration
+ pour tout le programme mais ce n'est pas conseillé pour une raison de lisibilit
+é.
+ Il faut donc bien réfléchir à l'arborescence des fichiers dès le départ,
+ ce qui peut être difficile lorsque l'on n'a pas l'habitude.
+\end_layout
+
+\begin_layout Standard
+Son utilisation par l'interface web est assez intuitive et permet une navigation
+ rapide entre les différents services associés aux machines monitorées.
+ La maintenance (ajout de nouvelles machines, nouveau services, ...) dépend
+ beaucoup de la façon dont ont été créé les fichiers de configuration au
+ départ.
+ Cela peut donc varier entre très simple, voire automatisé et très compliqué.
+ Pour nous, une fois que nous avons compris comment tout s'agençait, cela
+ a été plutôt facile.
+\end_layout
+
+\begin_layout Standard
+C'est un outil qui permet de regrouper les informations sur toutes les machines
+ surveillées, ce qui est très pratique mais il ne fait que du monitoring
+ système et ne permet pas le monitoring réseau.
+ Il ne reconnaît pas non plus la topologie réseau, ce qui peut poser quelques
+ problèmes, notamment lorsque les machines sont équipées d'adresses IP dynamique
+s (les fichiers de configurations ne peuvent pas prendre en compte ce type
+ de cas).
+ Ce pourrait être un outil très puissant couplé avec une application de
+ monitoring réseau.
 \end_layout
 
 \end_body
